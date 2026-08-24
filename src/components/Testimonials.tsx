@@ -1,0 +1,81 @@
+import React from 'react';
+import { TESTIMONIALS } from '../data/photographyData';
+import { Star, Quote, MapPin, CheckCircle2 } from 'lucide-react';
+
+export const Testimonials: React.FC = () => {
+  return (
+    <section id="reviews" className="py-24 bg-neutral-950 relative overflow-hidden">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        {/* Header */}
+        <div className="text-center max-w-3xl mx-auto space-y-4">
+          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
+            <Star className="w-4 h-4 text-amber-400 fill-amber-400" />
+            <span>Client Reviews & Feedback</span>
+          </div>
+
+          <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight">
+            Loved By <span className="text-gradient-amber italic font-normal">Hundreds of Clients</span> Across NYC
+          </h2>
+
+          <p className="text-neutral-400 text-base sm:text-lg">
+            See what couples, travelers, and clients say about their NYC photography sessions.
+          </p>
+        </div>
+
+        {/* Testimonials Cards Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14">
+          {TESTIMONIALS.map((item) => (
+            <div
+              key={item.id}
+              className="rounded-3xl p-8 glass-panel border border-neutral-800 hover:border-amber-500/40 transition-all duration-300 flex flex-col justify-between space-y-6 relative group"
+            >
+              <Quote className="absolute top-6 right-6 w-10 h-10 text-amber-500/10 group-hover:text-amber-500/20 transition-colors pointer-events-none" />
+
+              <div className="space-y-4">
+                {/* 5 Star Rating */}
+                <div className="flex items-center gap-1">
+                  {[...Array(item.rating)].map((_, i) => (
+                    <Star key={i} className="w-4 h-4 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
+
+                {/* Quote Text */}
+                <p className="text-neutral-300 text-sm leading-relaxed italic">
+                  "{item.quote}"
+                </p>
+              </div>
+
+              {/* Client Info Bar */}
+              <div className="pt-4 border-t border-neutral-800 flex items-center gap-4">
+                <img
+                  src={item.avatar}
+                  alt={item.name}
+                  className="w-12 h-12 rounded-full object-cover border border-amber-500/30 shrink-0"
+                />
+                <div>
+                  <h4 className="text-sm font-bold text-white flex items-center gap-1.5">
+                    {item.name}
+                    <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
+                  </h4>
+                  <p className="text-xs text-amber-300/90 font-medium flex items-center gap-1 mt-0.5">
+                    <MapPin className="w-3 h-3" /> {item.location}
+                  </p>
+                  <p className="text-[10px] text-neutral-500">{item.role} • {item.date}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Trust Badge Footer */}
+        <div className="mt-16 text-center">
+          <p className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
+            Verified 5.0 Star Rating on Google Business • Yelp • WeddingWire
+          </p>
+        </div>
+
+      </div>
+    </section>
+  );
+};
