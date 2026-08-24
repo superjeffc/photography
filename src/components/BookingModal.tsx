@@ -27,6 +27,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
   const [inquiryId, setInquiryId] = useState('');
 
   useEffect(() => {
@@ -37,7 +38,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   if (!isOpen) return null;
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
     // Anti-Spam Honeypot check: If the hidden honeypot field is filled out, reject bot submission
@@ -45,6 +46,34 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       console.warn('Spam bot detected and blocked via Honeypot protection.');
       setSubmitted(true);
       return;
+    }
+
+    setSubmitting(true);
+    const randomId = 'NYC-' + Math.floor(100000 + Math.random() * 900000);
+    setInquiryId(randomId);
+
+    const scriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL || '';
+
+    if (scriptUrl) {
+      try {
+        await fetch(scriptUrl, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            inquiryId: randomId,
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            date: formData.date,
+            location: formData.location,
+            sessionType: formData.sessionType,
+            message: formData.message,
+          })
+        });
+      } catch (err) {
+        console.error('Failed to dispatch Google Script Webhook:', err);
+      }
     }
 
     // Trigger confetti celebration
@@ -59,8 +88,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
       console.log('Confetti trigger:', err);
     }
 
-    const randomId = 'NYC-' + Math.floor(100000 + Math.random() * 900000);
-    setInquiryId(randomId);
+    setSubmitting(false);
     setSubmitted(true);
   };
 
@@ -232,10 +260,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div className="pt-2">
                 <button
                   type="submit"
-                  className="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-neutral-950 font-extrabold text-sm uppercase tracking-wider shadow-2xl gold-glow hover:scale-[1.01] transition-transform flex items-center justify-center gap-2"
+                  disabled={submitting}
+                  className="w-full py-4 rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 text-neutral-950 font-extrabold text-sm uppercase tracking-wider shadow-2xl gold-glow hover:scale-[1.01] transition-transform flex items-center justify-center gap-2 disabled:opacity-75"
                 >
                   <Send className="w-4 h-4 fill-neutral-950" />
-                  Submit Inquiry & Reserve Spot
+                  {submitting ? 'Sending Inquiry...' : 'Submit Inquiry & Reserve Spot'}
                 </button>
               </div>
 
