@@ -19,7 +19,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     phone: '',
     date: '',
     location: initialLocation || 'Central Park & Bow Bridge',
-    sessionType: 'Couples & Engagement',
+    sessionType: 'Couples',
     guestsCount: '2 People',
     message: '',
     // Anti-spam Honeypot field (invisible to real humans)
@@ -233,10 +233,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     onChange={(e) => setFormData({ ...formData, sessionType: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors"
                   >
-                    <option value="Couples & Engagement">Couples & Engagement</option>
-                    <option value="Surprise Proposal">Surprise Proposal (Secret Capture)</option>
+                    <option value="Couples">Couples</option>
                     <option value="Solo Portrait / Branding">Solo Portrait / Personal Branding</option>
-                    <option value="Fashion & Editorial">Fashion & Editorial</option>
                     <option value="Family / Maternity">Family / Maternity</option>
                   </select>
                 </div>
@@ -249,7 +247,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 </label>
                 <textarea
                   rows={3}
-                  placeholder="Tell us a bit about your vision or any special requests (e.g. surprise proposal timing, preferred golden hour vs sunrise)..."
+                  placeholder="Tell us a bit about your vision or any special requests (e.g. preferred locations, golden hour vs sunrise)..."
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   className="w-full px-4 py-3 rounded-xl bg-neutral-950 border border-neutral-800 text-white text-sm focus:outline-none focus:border-amber-500 transition-colors"

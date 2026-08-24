@@ -35,29 +35,26 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between gap-4">
           {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-3 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-neutral-950 font-bold text-lg shadow-lg group-hover:scale-105 transition-transform duration-300 gold-glow">
+          <a href="#" className="flex items-center gap-3 shrink-0 group">
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-300 flex items-center justify-center text-neutral-950 font-bold text-lg shadow-lg group-hover:scale-105 transition-transform duration-300 gold-glow shrink-0">
               <Camera className="w-5 h-5 stroke-[2.5]" />
             </div>
             <div>
-              <span className="font-syne font-extrabold text-xl tracking-wider text-white uppercase block leading-none group-hover:text-amber-300 transition-colors">
-                Jeff Chan
-              </span>
-              <span className="text-[10px] tracking-[0.25em] text-amber-400/90 uppercase font-medium block mt-1">
-                NYC Photographer • Portrait & Lifestyle
+              <span className="font-syne font-extrabold text-base sm:text-lg xl:text-xl tracking-wider text-white uppercase block leading-none group-hover:text-amber-300 transition-colors whitespace-nowrap">
+                Jeff Chan Photography
               </span>
             </div>
           </a>
 
           {/* Desktop Nav Links */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-4 lg:gap-6 xl:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-sm font-medium text-neutral-300 hover:text-amber-400 transition-colors duration-200"
+                className="text-sm font-medium text-neutral-300 hover:text-amber-400 transition-colors duration-200 whitespace-nowrap"
               >
                 {link.name}
               </a>
@@ -65,21 +62,21 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           </nav>
 
           {/* Right Action Buttons */}
-          <div className="hidden lg:flex items-center gap-4">
+          <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
             <a
               href="tel:+19293985478"
-              className="flex items-center gap-2 text-xs font-semibold text-neutral-300 hover:text-white px-3.5 py-2 rounded-lg bg-neutral-900/60 border border-neutral-800 transition-colors"
+              className="flex items-center gap-2 text-xs font-semibold text-neutral-300 hover:text-white px-3.5 py-2 rounded-lg bg-neutral-900/60 border border-neutral-800 transition-colors whitespace-nowrap shrink-0"
             >
-              <PhoneCall className="w-3.5 h-3.5 text-amber-400" />
-              <span>(929) 398-5478</span>
+              <PhoneCall className="w-3.5 h-3.5 text-amber-400 shrink-0" />
+              <span className="whitespace-nowrap">(929) 398-5478</span>
             </a>
 
             <button
               onClick={() => onOpenBooking()}
-              className="relative group overflow-hidden rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 p-[1px] font-semibold shadow-lg gold-glow hover:gold-glow-lg transition-all duration-300"
+              className="relative group overflow-hidden rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 p-[1px] font-semibold shadow-lg gold-glow hover:gold-glow-lg transition-all duration-300 shrink-0"
             >
-              <span className="flex items-center gap-2 px-5 py-2.5 rounded-[11px] bg-neutral-950 text-amber-300 text-sm font-semibold group-hover:bg-transparent group-hover:text-neutral-950 transition-all duration-300">
-                <Sparkles className="w-4 h-4" />
+              <span className="flex items-center gap-2 px-4 xl:px-5 py-2.5 rounded-[11px] bg-neutral-950 text-amber-300 text-xs xl:text-sm font-semibold group-hover:bg-transparent group-hover:text-neutral-950 transition-all duration-300 whitespace-nowrap">
+                <Sparkles className="w-4 h-4 shrink-0" />
                 Book NYC Session
               </span>
             </button>

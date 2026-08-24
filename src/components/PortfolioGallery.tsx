@@ -12,10 +12,8 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = ({ onOpenBookin
 
   const categories = [
     { id: 'all', label: 'All NYC Sessions' },
-    { id: 'couples', label: 'Couples & Engagements' },
+    { id: 'couples', label: 'Couples' },
     { id: 'portraits', label: 'Solo Portraits' },
-    { id: 'editorial', label: 'Fashion & Editorial' },
-    { id: 'proposals', label: 'Surprise Proposals' },
   ];
 
   const filteredItems = PORTFOLIO_GALLERY.filter((item) =>

@@ -28,7 +28,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             </div>
 
             <p className="text-neutral-400 text-xs sm:text-sm max-w-sm leading-relaxed">
-              Premier NYC client portrait, couple, and surprise proposal photography specializing in focused 1-hour sessions across iconic spots like Central Park, SoHo, and Brooklyn Bridge.
+              Premier NYC client portrait and couple photography specializing in focused 1-hour sessions across iconic spots like Central Park, SoHo, and Brooklyn Bridge.
             </p>
 
             <div className="pt-2 flex items-center gap-4">

@@ -15,14 +15,13 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden glass-panel border border-amber-500/30 shadow-2xl gold-glow group">
               <img
-                src="/images/photographer.jpg"
+                src="https://assets.superjeffc.com/apps/jeff.jpg"
                 alt="Jeff Chan - NYC Photographer"
                 className="w-full h-full object-cover aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80" />
               
               <div className="absolute bottom-6 left-6 right-6 space-y-1">
-                <span className="text-xs font-mono text-amber-400 uppercase tracking-widest">Lead NYC Photographer</span>
                 <h3 className="text-2xl font-serif font-bold text-white">Jeff Chan</h3>
                 <p className="text-xs text-neutral-300 flex items-center gap-1.5 pt-1">
                   <MapPin className="w-3.5 h-3.5 text-amber-400" /> Based in Brooklyn & Queens, NY
@@ -31,11 +30,11 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
             </div>
 
             {/* Experience Floating Badge */}
-            <div className="absolute -bottom-6 -right-6 bg-amber-500 text-neutral-950 p-4 rounded-2xl shadow-2xl font-serif font-bold border-2 border-neutral-950 hidden sm:flex items-center gap-3 gold-glow">
-              <Award className="w-8 h-8 shrink-0" />
+            <div className="absolute -bottom-5 right-4 bg-amber-500 text-neutral-950 px-4 py-3 rounded-2xl shadow-2xl font-serif font-bold border-2 border-neutral-950 hidden sm:flex items-center gap-3 gold-glow">
+              <Award className="w-7 h-7 shrink-0" />
               <div>
-                <p className="text-2xl font-extrabold leading-none">7+ Years</p>
-                <p className="text-[11px] font-sans font-semibold text-neutral-900 uppercase mt-0.5">NYC Photography</p>
+                <p className="text-lg font-extrabold leading-none">Relaxed & Candid</p>
+                <p className="text-[10px] font-sans font-semibold text-neutral-900 uppercase mt-0.5">Natural NYC Sessions</p>
               </div>
             </div>
           </div>
@@ -48,15 +47,15 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
             </div>
 
             <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight">
-              Hi, I’m Jeff. <span className="text-gradient-amber italic font-normal">I Capture NYC Stories.</span>
+              Hi, I’m Jeff. <span className="text-gradient-amber italic font-normal">Capturing Lively, Authentic NYC Moments.</span>
             </h2>
 
             <p className="text-neutral-300 text-base sm:text-lg leading-relaxed">
-              For over seven years, I’ve had the privilege of photographing couples, travelers, and locals in New York City’s most picturesque corners. Whether we are exploring historic cobblestone streets, serene park archways, or catching glowing sunsets over Midtown, my mission is simple: to make you look and feel incredible in a relaxed 1-hour session.
+              My goal as a photographer is simple: to help you feel completely relaxed, comfortable, and at ease from the second we start walking. Photography should never feel like a chore or a series of forced poses — it should be a fun, memorable experience where your true personality shines through.
             </p>
 
             <p className="text-neutral-400 text-sm leading-relaxed">
-              I don’t believe in stiff, uncomfortable posing. Instead, I guide you through natural interactions, lighthearted laughs, and genuine moments that feel completely authentic to who you are.
+              Instead of stiff, awkward posing, I focus on gentle prompts, candid interactions, and natural movement. Whether we’re exploring vibrant NYC streets or tranquil park paths, I capture lively, expressive images filled with real smiles and genuine emotion.
             </p>
 
             {/* Core Values / Philosophy */}
@@ -72,10 +71,10 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
 
               <div className="p-4 rounded-xl bg-neutral-950/60 border border-neutral-800 space-y-1">
                 <div className="flex items-center gap-2 text-amber-400 font-bold text-sm">
-                  <Camera className="w-4 h-4" /> Top-Tier Cinema Gear
+                  <Camera className="w-4 h-4" /> Professional Sony Setup
                 </div>
                 <p className="text-xs text-neutral-400">
-                  Shooting with dual Leica & Sony Alpha camera bodies with ultra-sharp prime lenses.
+                  Shooting with a full-frame Sony A7C II paired with a versatile FE 24-50mm f/2.8 G zoom lens.
                 </p>
               </div>
             </div>
@@ -83,7 +82,7 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
             {/* Gear & Guarantee */}
             <div className="pt-4 border-t border-neutral-800 flex flex-wrap items-center justify-between gap-4">
               <div className="text-xs text-neutral-400 font-mono">
-                <span>Gear: Sony A7IV • Leica M11 • FE 85mm f/1.4 GM • FE 35mm f/1.4 GM</span>
+                <span>Gear: Sony A7C II • FE 24-50mm f/2.8 G</span>
               </div>
 
               <button

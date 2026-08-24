@@ -18,7 +18,7 @@ export interface PortfolioItem {
   client: string;
   locationId: string;
   locationName: string;
-  category: 'couples' | 'portraits' | 'editorial' | 'proposals';
+  category: 'couples' | 'portraits';
   categoryLabel: string;
   image: string;
   gear: string;
@@ -71,8 +71,8 @@ export const NYC_LOCATIONS: LocationItem[] = [
     borough: 'Manhattan',
     description: 'Timeless NYC romance surrounded by natural trees, serene lake waters, classic stone arches, and the elegant curves of Bow Bridge overlooking San Remo towers.',
     bestTime: 'Early Morning (7:00 AM - 9:00 AM)',
-    sessionTypes: ['Surprise Proposals', 'Wedding Portraits', 'Romantic Couples', 'Maternity'],
-    image: '/images/central_park.jpg',
+    sessionTypes: ['Romantic Couples', 'Solo Portraits', 'Wedding Portraits', 'Maternity'],
+    image: 'images/central_park.jpg',
     featured: true,
     highlights: ['Bow Bridge Lake Reflection', 'Bethesda Terrace Arcade', 'The Mall Elm Tree Canopy', 'Conservatory Water'],
     coordinates: '40.7757° N, 73.9712° W'
@@ -82,12 +82,12 @@ export const NYC_LOCATIONS: LocationItem[] = [
     name: 'SoHo Cast-Iron District',
     area: 'Lower Manhattan',
     borough: 'Manhattan',
-    description: 'High-fashion editorial aesthetic featuring 19th-century cast-iron architecture, cobblestone avenues, black wrought iron fire escapes, and chic store fronts.',
+    description: 'Urban architectural aesthetic featuring 19th-century cast-iron architecture, cobblestone avenues, black wrought iron fire escapes, and chic store fronts.',
     bestTime: 'Morning (8:00 AM - 10:30 AM)',
-    sessionTypes: ['Fashion Editorial', 'Personal Branding', 'Modeling Portfolios', 'Chic Streetwear'],
-    image: '/images/soho_fashion.jpg',
+    sessionTypes: ['Street Portraits', 'Personal Branding', 'Modeling Portfolios', 'Chic Streetwear'],
+    image: 'images/soho_fashion.jpg',
     featured: true,
-    highlights: ['Greene St Cast-Iron Lofts', 'Spring Street Cobblestones', 'Black Fire Escape Architecture', 'High-Fashion Urban Vibe'],
+    highlights: ['Greene St Cast-Iron Lofts', 'Spring Street Cobblestones', 'Black Fire Escape Architecture', 'Chic Urban Vibe'],
     coordinates: '40.7233° N, 74.0030° W'
   },
   {
@@ -98,7 +98,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Gothic stone arches and geometric steel cables floating high above the East River with Lower Manhattan financial district towering in the light.',
     bestTime: 'Sunrise (6:00 AM - 7:30 AM strictly recommended)',
     sessionTypes: ['Anniversary & Couples', 'Fine Art Portraits', 'Graduation', 'Fitness & Lifestyle'],
-    image: '/images/brooklyn_bridge.jpg',
+    image: 'images/brooklyn_bridge.jpg',
     featured: false,
     highlights: ['Gothic Stone Towers', 'Wooden Promenade Planks', 'Lower Manhattan Skyline', 'Sunrise Light Flare'],
     coordinates: '40.7061° N, 73.9969° W'
@@ -110,8 +110,8 @@ export const NYC_LOCATIONS: LocationItem[] = [
     borough: 'Brooklyn',
     description: 'Classic NYC setting featuring cobblestone streets framed by historic red brick loft buildings with the Manhattan Bridge rising in the backdrop.',
     bestTime: 'Sunrise to 8:30 AM or Golden Hour (1 hr before sunset)',
-    sessionTypes: ['Couples & Engagements', 'Solo Portraits', 'Surprise Proposals', 'Street Editorial'],
-    image: '/images/hero_dumbo.jpg',
+    sessionTypes: ['Couples', 'Solo Portraits', 'Anniversary Shoots', 'Street Portraits'],
+    image: 'images/hero_dumbo.jpg',
     featured: false,
     highlights: ['Washington St Bridge Framing', 'Jane’s Carousel Waterfront', 'Pebble Beach Skyline Views', 'Classic Cobblestone Alleyways'],
     coordinates: '40.7033° N, 73.9881° W'
@@ -123,8 +123,8 @@ export const NYC_LOCATIONS: LocationItem[] = [
     borough: 'Queens (LIC)',
     description: 'Unobstructed panoramic views of the Midtown Manhattan skyline, East River piers, manicured lawns, and the vintage red neon Pepsi-Cola sign.',
     bestTime: 'Sunset to Twilight (Golden & Blue Hour)',
-    sessionTypes: ['Couples & Engagements', 'Family Portraits', 'Personal Branding', 'Sunset Romance'],
-    image: '/images/gantry_park.jpg',
+    sessionTypes: ['Couples', 'Family Portraits', 'Personal Branding', 'Sunset Romance'],
+    image: 'images/gantry_park.jpg',
     featured: false,
     highlights: ['Historic Pepsi-Cola Neon Sign', 'Midtown Skyline (Empire State & Chrysler)', 'Restored Industrial Gantries', 'Waterfront Wooden Loungers'],
     coordinates: '40.7456° N, 73.9582° W'
@@ -134,12 +134,12 @@ export const NYC_LOCATIONS: LocationItem[] = [
     name: 'Times Square & Neon Lights',
     area: 'Midtown Theatre District',
     borough: 'Manhattan',
-    description: 'Vibrant, high-contrast urban energy illuminated by thousands of multi-colored digital billboards, taxi yellow flashes, and dramatic rain reflections.',
-    bestTime: 'Night / Rain Twilight (8:00 PM - 11:00 PM)',
-    sessionTypes: ['Night Editorial', 'Celebration Sessions', 'Music/Artist Portfolios', 'High Contrast Urban'],
-    image: '/images/times_square.jpg',
+    description: 'Vibrant, high-contrast urban energy illuminated by thousands of multi-colored digital billboards, taxi yellow flashes, and dramatic city lights.',
+    bestTime: 'Night / Evening Twilight (8:00 PM - 11:00 PM)',
+    sessionTypes: ['Night Portraits', 'Celebration Sessions', 'Music/Artist Portfolios', 'High Contrast Urban'],
+    image: 'images/times_square.jpg',
     featured: false,
-    highlights: ['Multi-colored Neon Glow', 'Yellow Cab Motion Blurs', 'Red Glass Stairs', 'Rain & Wet Pavement Reflections'],
+    highlights: ['Multi-colored Neon Glow', 'Yellow Cab Motion Blurs', 'Red Glass Stairs', 'Urban Pavement Reflections'],
     coordinates: '40.7580° N, 73.9855° W'
   }
 ];
@@ -152,10 +152,10 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationId: 'dumbo',
     locationName: 'DUMBO, Brooklyn',
     category: 'couples',
-    categoryLabel: 'Couples & Engagements',
-    image: '/images/hero_dumbo.jpg',
-    gear: 'Sony A7 IV + FE 85mm f/1.4 GM',
-    settings: '1/800s @ f/1.8, ISO 100',
+    categoryLabel: 'Couples',
+    image: 'images/hero_dumbo.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/800s @ f/2.8, ISO 100',
     story: 'Captured on a crisp November evening. The golden hour sun peeked right through the Manhattan Bridge superstructure, creating a warm magical glow.'
   },
   {
@@ -166,9 +166,9 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Gantry Plaza State Park',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: '/images/gantry_park.jpg',
-    gear: 'Leica M11 + Summilux-M 50mm f/1.4',
-    settings: '1/1250s @ f/2.0, ISO 64',
+    image: 'images/gantry_park.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/1250s @ f/2.8, ISO 100',
     story: 'Elena requested a sleek branding shoot with the iconic Pepsi-Cola sign and Empire State building glowing in sunset tones.'
   },
   {
@@ -177,25 +177,25 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     client: 'Maya Lin',
     locationId: 'soho',
     locationName: 'SoHo, Manhattan',
-    category: 'editorial',
-    categoryLabel: 'Fashion Editorial',
-    image: '/images/soho_fashion.jpg',
-    gear: 'Sony A7 IV + FE 35mm f/1.4 GM',
-    settings: '1/2000s @ f/1.6, ISO 100',
+    category: 'portraits',
+    categoryLabel: 'Solo Portraits',
+    image: 'images/soho_fashion.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/2000s @ f/2.8, ISO 100',
     story: 'Morning light falling across cobblestones on Greene Street in SoHo. The classic trench coat and autumn tones harmonized effortlessly with historical cast-iron facades.'
   },
   {
     id: 'p4',
-    title: 'Bow Bridge Autumn Romance',
+    title: 'Bow Bridge Autumn Walk',
     client: 'Michael & Claire',
     locationId: 'central-park',
     locationName: 'Central Park, NYC',
-    category: 'proposals',
-    categoryLabel: 'Surprise Proposals',
-    image: '/images/central_park.jpg',
-    gear: 'Sony A7 IV + FE 70-200mm f/2.8 GM II',
+    category: 'couples',
+    categoryLabel: 'Couples',
+    image: 'images/central_park.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/640s @ f/2.8, ISO 200',
-    story: 'A secret surprise proposal captured from the lakeside bank of Bow Bridge just as Michael dropped to one knee amidst peak autumn foliage.'
+    story: 'A romantic couples walk captured along the lakeside bank of Bow Bridge amidst peak autumn foliage.'
   },
   {
     id: 'p5',
@@ -204,10 +204,10 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationId: 'brooklyn-bridge',
     locationName: 'Brooklyn Bridge Walkway',
     category: 'couples',
-    categoryLabel: 'Couples & Engagements',
-    image: '/images/brooklyn_bridge.jpg',
-    gear: 'Sony A7 IV + FE 24mm f/1.4 GM',
-    settings: '1/1000s @ f/2.2, ISO 100',
+    categoryLabel: 'Couples',
+    image: 'images/brooklyn_bridge.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/1000s @ f/2.8, ISO 100',
     story: 'We met at 6:15 AM at the Brooklyn Bridge entrance. Having the bridge almost entirely to ourselves at sunrise produced this unforgettable cinematic portrait.'
   },
   {
@@ -216,12 +216,12 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     client: 'Sienna Miller',
     locationId: 'times-square',
     locationName: 'Times Square, Manhattan',
-    category: 'editorial',
-    categoryLabel: 'Fashion Editorial',
-    image: '/images/times_square.jpg',
-    gear: 'Leica M11 + Noctilux-M 50mm f/0.95',
-    settings: '1/250s @ f/1.2, ISO 400',
-    story: 'Shot right after a fresh night rain in Times Square. The wet asphalt reflected neon cyan and crimson lights into a cyberpunk dream aesthetic.'
+    category: 'portraits',
+    categoryLabel: 'Solo Portraits',
+    image: 'images/times_square.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/250s @ f/2.8, ISO 400',
+    story: 'Shot right after a fresh night rain in Times Square. The wet asphalt reflected neon cyan and crimson lights into a cinematic dream aesthetic.'
   }
 ];
 
@@ -229,7 +229,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
   {
     id: 'express',
     name: 'The 30-Minute NYC Express',
-    tagline: 'Ideal for quick solo portraits, simple headshots, or a fast surprise proposal in 1 NYC spot.',
+    tagline: 'Ideal for quick solo portraits, simple headshots, or a fast couples shoot in 1 NYC spot.',
     price: 275,
     duration: '30 Minutes',
     locationsCount: 1,
@@ -247,7 +247,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
   {
     id: 'signature',
     name: 'The Signature 1-Hour Session',
-    tagline: 'Our most popular session for couples, surprise proposals, and individual portrait shoots.',
+    tagline: 'Our most popular session for couples and individual portrait shoots.',
     price: 450,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
@@ -311,9 +311,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 't1',
     name: 'Sarah & Andrew Sterling',
-    role: 'Couple / Engagement',
+    role: 'Couples',
     location: 'Central Park & Bow Bridge',
-    quote: 'Jeff made us feel so comfortable in front of the camera! We took our engagement photos at Central Park during golden hour, and people literally gasp when they see our photos. He knew every hidden angle away from crowds!',
+    quote: 'Jeff made us feel so comfortable in front of the camera! We took our couple photos at Central Park during golden hour, and people literally gasp when they see our photos. He knew every hidden angle away from crowds!',
     rating: 5,
     date: 'October 2025',
     avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80'
@@ -321,9 +321,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 't2',
     name: 'Jonathan Rivera',
-    role: 'Surprise Proposal',
+    role: 'Couples',
     location: 'Brooklyn Bridge Walkway',
-    quote: 'I proposed to my girlfriend at sunrise with the Midtown skyline glowing behind us. Jeff helped me plan the exact spot, timed the light flawlessly, and caught every raw emotion. 1000% recommend!',
+    quote: 'We took sunrise photos on the Brooklyn Bridge walkway with the Midtown skyline glowing behind us. Jeff helped us plan the exact spot, timed the light flawlessly, and caught every raw emotion. 1000% recommend!',
     rating: 5,
     date: 'December 2025',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80'
@@ -331,9 +331,9 @@ export const TESTIMONIALS: TestimonialItem[] = [
   {
     id: 't3',
     name: 'Chloe Bennett',
-    role: 'Fashion & Branding',
+    role: 'Solo Portraits',
     location: 'SoHo Cast-Iron District',
-    quote: 'As an influencer visiting New York from London, I needed editorial photos that captured true NYC elegance. Jeff is an absolute master of natural light. Turned around my gallery super fast and every shot belongs in a magazine.',
+    quote: 'As a traveler visiting New York from London, I needed portrait photos that captured true NYC elegance. Jeff is an absolute master of natural light. Turned around my gallery super fast and every shot looks incredible.',
     rating: 5,
     date: 'January 2026',
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80'
@@ -344,7 +344,7 @@ export const FAQS: FaqItem[] = [
   {
     category: 'weather',
     question: 'What happens if it rains on our scheduled shoot day?',
-    answer: 'NYC weather can be unpredictable! If heavy rain or extreme weather is forecasted, we offer complimentary rescheduling to a backup date within your stay or refund your deposit. Alternatively, overcast skies and light drizzle in locations like Times Square or Central Park actually create insanely gorgeous atmospheric reflections!'
+    answer: 'If rain or inclement weather is forecasted on your scheduled shoot date, we will gladly reschedule your session to a clear backup date or time during your stay, or issue a full refund of your deposit. We do not shoot in the rain so you always get crisp, beautiful, dry photos!'
   },
   {
     category: 'locations',

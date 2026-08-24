@@ -10,12 +10,12 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
   const heroBackgrounds = [
     {
-      url: '/images/central_park.jpg',
+      url: 'images/central_park.jpg',
       title: 'Central Park & Bow Bridge',
       locationTag: 'Central Park, Manhattan'
     },
     {
-      url: '/images/soho_fashion.jpg',
+      url: 'images/soho_fashion.jpg',
       title: 'SoHo Cast-Iron District',
       locationTag: 'SoHo, Manhattan'
     }
@@ -54,7 +54,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             {/* Subheading */}
             <p className="text-lg sm:text-xl text-neutral-300 font-normal max-w-2xl leading-relaxed">
-              Professional portrait, couple, and surprise proposal photography focused on intimate <strong className="text-amber-300 font-medium">1-hour sessions</strong> in NYC’s most legendary locations — from Central Park arches to historic cobblestone avenues and glowing sunset skylines.
+              Professional portrait and couple photography focused on intimate <strong className="text-amber-300 font-medium">1-hour sessions</strong> in NYC’s most legendary locations — from Central Park arches to historic cobblestone avenues and glowing sunset skylines.
             </p>
 
             {/* Popular Spot Hashtags */}
@@ -106,8 +106,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   <Camera className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-white leading-none">500+</p>
-                  <p className="text-xs text-neutral-400 mt-1">NYC Sessions</p>
+                  <p className="text-xl font-bold text-white leading-none">1-on-1</p>
+                  <p className="text-xs text-neutral-400 mt-1">Dedicated Sessions</p>
                 </div>
               </div>
 
@@ -126,8 +126,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <p className="text-xl font-bold text-white leading-none">100%</p>
-                  <p className="text-xs text-neutral-400 mt-1">Weather Guarantee</p>
+                  <p className="text-xl font-bold text-white leading-none">Free</p>
+                  <p className="text-xs text-neutral-400 mt-1">Rain Reschedule</p>
                 </div>
               </div>
             </div>
