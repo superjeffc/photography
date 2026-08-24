@@ -47,12 +47,10 @@ export const Testimonials: React.FC = () => {
               </div>
 
               {/* Client Info Bar */}
-              <div className="pt-4 border-t border-neutral-800 flex items-center gap-4">
-                <img
-                  src={item.avatar}
-                  alt={item.name}
-                  className="w-12 h-12 rounded-full object-cover border border-amber-500/30 shrink-0"
-                />
+              <div className="pt-4 border-t border-neutral-800 flex items-center gap-3">
+                <div className="w-10 h-10 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 flex items-center justify-center font-bold text-sm shrink-0">
+                  {item.name.charAt(0)}
+                </div>
                 <div>
                   <h4 className="text-sm font-bold text-white flex items-center gap-1.5">
                     {item.name}
