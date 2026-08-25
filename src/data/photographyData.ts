@@ -31,6 +31,7 @@ export interface PackageItem {
   name: string;
   tagline: string;
   price: number;
+  originalPrice?: number;
   duration: string;
   locationsCount: number;
   editedPhotos: number;
@@ -72,7 +73,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Timeless NYC romance surrounded by natural trees, serene lake waters, classic stone arches, and the elegant curves of Bow Bridge overlooking San Remo towers.',
     bestTime: 'Early Morning (7:00 AM - 9:00 AM)',
     sessionTypes: ['Romantic Couples', 'Solo Portraits', 'Wedding Portraits', 'Maternity'],
-    image: 'images/central_park.jpg',
+    image: '/images/central_park.jpg',
     featured: true,
     highlights: ['Bow Bridge Lake Reflection', 'Bethesda Terrace Arcade', 'The Mall Elm Tree Canopy', 'Conservatory Water'],
     coordinates: '40.7757° N, 73.9712° W'
@@ -85,7 +86,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Urban architectural aesthetic featuring 19th-century cast-iron architecture, cobblestone avenues, black wrought iron fire escapes, and chic store fronts.',
     bestTime: 'Morning (8:00 AM - 10:30 AM)',
     sessionTypes: ['Street Portraits', 'Personal Branding', 'Modeling Portfolios', 'Chic Streetwear'],
-    image: 'images/soho_fashion.jpg',
+    image: '/images/soho_fashion.jpg',
     featured: true,
     highlights: ['Greene St Cast-Iron Lofts', 'Spring Street Cobblestones', 'Black Fire Escape Architecture', 'Chic Urban Vibe'],
     coordinates: '40.7233° N, 74.0030° W'
@@ -98,7 +99,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Gothic stone arches and geometric steel cables floating high above the East River with Lower Manhattan financial district towering in the light.',
     bestTime: 'Sunrise (6:00 AM - 7:30 AM strictly recommended)',
     sessionTypes: ['Anniversary & Couples', 'Fine Art Portraits', 'Graduation', 'Fitness & Lifestyle'],
-    image: 'images/brooklyn_bridge.jpg',
+    image: '/images/brooklyn_bridge.jpg',
     featured: false,
     highlights: ['Gothic Stone Towers', 'Wooden Promenade Planks', 'Lower Manhattan Skyline', 'Sunrise Light Flare'],
     coordinates: '40.7061° N, 73.9969° W'
@@ -111,7 +112,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Classic NYC setting featuring cobblestone streets framed by historic red brick loft buildings with the Manhattan Bridge rising in the backdrop.',
     bestTime: 'Sunrise to 8:30 AM or Golden Hour (1 hr before sunset)',
     sessionTypes: ['Couples', 'Solo Portraits', 'Anniversary Shoots', 'Street Portraits'],
-    image: 'images/hero_dumbo.jpg',
+    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
     featured: false,
     highlights: ['Washington St Bridge Framing', 'Jane’s Carousel Waterfront', 'Pebble Beach Skyline Views', 'Classic Cobblestone Alleyways'],
     coordinates: '40.7033° N, 73.9881° W'
@@ -124,22 +125,22 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'Unobstructed panoramic views of the Midtown Manhattan skyline, East River piers, manicured lawns, and the vintage red neon Pepsi-Cola sign.',
     bestTime: 'Sunset to Twilight (Golden & Blue Hour)',
     sessionTypes: ['Couples', 'Family Portraits', 'Personal Branding', 'Sunset Romance'],
-    image: 'images/gantry_park.jpg',
+    image: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
     featured: false,
     highlights: ['Historic Pepsi-Cola Neon Sign', 'Midtown Skyline (Empire State & Chrysler)', 'Restored Industrial Gantries', 'Waterfront Wooden Loungers'],
     coordinates: '40.7456° N, 73.9582° W'
   },
   {
     id: 'times-square',
-    name: 'Times Square & Neon Lights',
+    name: 'Times Square Plaza (Daylight)',
     area: 'Midtown Theatre District',
     borough: 'Manhattan',
-    description: 'Vibrant, high-contrast urban energy illuminated by thousands of multi-colored digital billboards, taxi yellow flashes, and dramatic city lights.',
-    bestTime: 'Night / Evening Twilight (8:00 PM - 11:00 PM)',
-    sessionTypes: ['Night Portraits', 'Celebration Sessions', 'Music/Artist Portfolios', 'High Contrast Urban'],
-    image: 'images/times_square.jpg',
+    description: 'High-energy NYC street photography among iconic red stairs, Broadway theater marquees, and dynamic Manhattan streetscapes in natural daylight.',
+    bestTime: 'Morning / Afternoon Daylight (Golden Hour)',
+    sessionTypes: ['Daylight Street Portraits', 'Urban Fashion', 'Personal Branding'],
+    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
     featured: false,
-    highlights: ['Multi-colored Neon Glow', 'Yellow Cab Motion Blurs', 'Red Glass Stairs', 'Urban Pavement Reflections'],
+    highlights: ['Red Glass Stairs', 'Broadway Theatre Marquees', 'Iconic Billboard Architecture', 'Pedestrian Plaza Streetscapes'],
     coordinates: '40.7580° N, 73.9855° W'
   }
 ];
@@ -147,13 +148,26 @@ export const NYC_LOCATIONS: LocationItem[] = [
 export const PORTFOLIO_GALLERY: PortfolioItem[] = [
   {
     id: 'p1',
+    title: 'Iconic DUMBO Cobblestone Perspective',
+    client: 'David & Sarah',
+    locationId: 'dumbo',
+    locationName: 'DUMBO, Brooklyn',
+    category: 'couples',
+    categoryLabel: 'Couples',
+    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
+    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
+    settings: '1/1000s @ f/2.8, ISO 100',
+    story: 'Framed between historic red-brick warehouse facades on Washington Street with the Manhattan Bridge tower centered behind.'
+  },
+  {
+    id: 'p1_b',
     title: 'Autumn Golden Hour Promenade',
     client: 'David & Sarah',
     locationId: 'dumbo',
     locationName: 'DUMBO, Brooklyn',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'images/hero_dumbo.jpg',
+    image: 'https://assets.superjeffc.com/apps/dumbo2.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/800s @ f/2.8, ISO 100',
     story: 'Captured on a crisp November evening. The golden hour sun peeked right through the Manhattan Bridge superstructure, creating a warm magical glow.'
@@ -163,65 +177,52 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     title: 'Midtown Skyline Sunset Magic',
     client: 'Elena Vance',
     locationId: 'gantry-park',
-    locationName: 'Gantry Plaza State Park',
+    locationName: 'Gantry Plaza State Park, Queens',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: 'images/gantry_park.jpg',
+    image: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1250s @ f/2.8, ISO 100',
-    story: 'Elena requested a sleek branding shoot with the iconic Pepsi-Cola sign and Empire State building glowing in sunset tones.'
+    story: 'Sleek session with the iconic Pepsi-Cola sign and Empire State building glowing in sunset tones.'
   },
   {
     id: 'p3',
-    title: 'Chic Cast-Iron Avenue',
+    title: 'Gantry Plaza Waterfront Glow',
     client: 'Maya Lin',
-    locationId: 'soho',
-    locationName: 'SoHo, Manhattan',
+    locationId: 'gantry-park',
+    locationName: 'Gantry Plaza State Park, Queens',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: 'images/soho_fashion.jpg',
+    image: 'https://assets.superjeffc.com/apps/gantry-state-park3.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/2000s @ f/2.8, ISO 100',
-    story: 'Morning light falling across cobblestones on Greene Street in SoHo. The classic trench coat and autumn tones harmonized effortlessly with historical cast-iron facades.'
+    story: 'Sunset light reflecting off the East River piers at Gantry Plaza State Park with clear views of the Midtown Manhattan skyline.'
   },
   {
     id: 'p4',
-    title: 'Bow Bridge Autumn Walk',
+    title: 'Poconos Nature Trail Escape',
     client: 'Michael & Claire',
-    locationId: 'central-park',
-    locationName: 'Central Park, NYC',
+    locationId: 'poconos',
+    locationName: 'Poconos Mountains (Tri-State Escape)',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'images/central_park.jpg',
+    image: 'https://assets.superjeffc.com/apps/hiking.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/640s @ f/2.8, ISO 200',
-    story: 'A romantic couples walk captured along the lakeside bank of Bow Bridge amidst peak autumn foliage.'
+    story: 'A serene outdoor adventure session captured along lush forest trails in the Poconos — available as part of custom Tri-State day trip packages.'
   },
   {
     id: 'p5',
-    title: 'Sunrise Archway Journey',
+    title: 'Gantry Pier Twilight Promenade',
     client: 'James & Jessica',
-    locationId: 'brooklyn-bridge',
-    locationName: 'Brooklyn Bridge Walkway',
+    locationId: 'gantry-park',
+    locationName: 'Gantry Plaza State Park, Queens',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'images/brooklyn_bridge.jpg',
+    image: 'https://assets.superjeffc.com/apps/gantry-state-park2.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1000s @ f/2.8, ISO 100',
-    story: 'We met at 6:15 AM at the Brooklyn Bridge entrance. Having the bridge almost entirely to ourselves at sunrise produced this unforgettable cinematic portrait.'
-  },
-  {
-    id: 'p6',
-    title: 'Midnight Electric Glow',
-    client: 'Sienna Miller',
-    locationId: 'times-square',
-    locationName: 'Times Square, Manhattan',
-    category: 'portraits',
-    categoryLabel: 'Solo Portraits',
-    image: 'images/times_square.jpg',
-    gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
-    settings: '1/250s @ f/2.8, ISO 400',
-    story: 'Shot right after a fresh night rain in Times Square. The wet asphalt reflected neon cyan and crimson lights into a cinematic dream aesthetic.'
+    story: 'A serene twilight session along the restored industrial gantries and East River wooden promenade at Gantry Plaza State Park.'
   }
 ];
 
@@ -230,7 +231,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'express',
     name: 'The 30-Minute NYC Express',
     tagline: 'Ideal for quick solo portraits, simple headshots, or a fast couples shoot in 1 NYC spot.',
-    price: 275,
+    price: 195,
+    originalPrice: 350,
     duration: '30 Minutes',
     locationsCount: 1,
     editedPhotos: 15,
@@ -248,7 +250,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'signature',
     name: 'The Signature 1-Hour Session',
     tagline: 'Our most popular session for couples and individual portrait shoots.',
-    price: 450,
+    price: 295,
+    originalPrice: 550,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 30,
@@ -269,7 +272,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'deluxe',
     name: 'The Deluxe 1-Hour Storybook',
     tagline: 'Maximum edited photos and priority turnaround packed into a focused 1-hour session.',
-    price: 650,
+    price: 450,
+    originalPrice: 750,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 50,
@@ -363,8 +367,8 @@ export const FAQS: FaqItem[] = [
   },
   {
     category: 'locations',
-    question: 'Do you help with styling and posing advice?',
-    answer: 'Absolutely! Upon booking, you will receive our exclusive NYC Style & Location Guide packed with color palette recommendations tailored to your shoot location, footwear advice for cobblestones, and during the shoot Jeff directs gentle, natural movement so you never feel stiff or staged.'
+    question: 'Do you help with posing and direction during the shoot?',
+    answer: 'Absolutely! Throughout the entire shoot, Jeff will guide and direct you with gentle, natural prompts and movement so you never have to worry about how to pose or feel stiff or staged.'
   }
 ];
 

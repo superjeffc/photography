@@ -1,6 +1,6 @@
 import React from 'react';
 import { TESTIMONIALS } from '../data/photographyData';
-import { Star, Quote, MapPin, CheckCircle2 } from 'lucide-react';
+import { Star, Quote, CheckCircle2 } from 'lucide-react';
 
 export const Testimonials: React.FC = () => {
   return (
@@ -56,21 +56,11 @@ export const Testimonials: React.FC = () => {
                     {item.name}
                     <CheckCircle2 className="w-3.5 h-3.5 text-amber-400" />
                   </h4>
-                  <p className="text-xs text-amber-300/90 font-medium flex items-center gap-1 mt-0.5">
-                    <MapPin className="w-3 h-3" /> {item.location}
-                  </p>
-                  <p className="text-[10px] text-neutral-500">{item.role} • {item.date}</p>
+                  <p className="text-xs text-neutral-500 mt-0.5">{item.date}</p>
                 </div>
               </div>
             </div>
           ))}
-        </div>
-
-        {/* Trust Badge Footer */}
-        <div className="mt-16 text-center">
-          <p className="text-xs font-mono text-neutral-400 uppercase tracking-widest">
-            Verified 5.0 Star Rating on Google Business • Yelp • WeddingWire
-          </p>
         </div>
 
       </div>

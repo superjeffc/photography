@@ -219,7 +219,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     <option value="Brooklyn Bridge Walkway">Brooklyn Bridge Walkway (Sunrise)</option>
                     <option value="DUMBO & Washington St">DUMBO & Washington St (Brooklyn)</option>
                     <option value="Gantry Plaza State Park">Gantry Plaza State Park (Queens Waterfront)</option>
-                    <option value="Times Square & Neon Lights">Times Square & Neon Lights (Night)</option>
+                    <option value="Times Square Plaza (Daylight)">Times Square Plaza (Daylight)</option>
                     <option value="Custom NYC Location">Custom NYC Location / Studio</option>
                   </select>
                 </div>
@@ -307,7 +307,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               </div>
               <div className="flex justify-between">
                 <span className="text-neutral-400">Response Guaranteed:</span>
-                <span className="font-bold text-amber-300">Within 2 Hours</span>
+                <span className="font-bold text-amber-300">Within 24 Hours</span>
               </div>
             </div>
 

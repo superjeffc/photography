@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Heart, Sun, Award, MapPin } from 'lucide-react';
+import { Camera, Heart, Sun, Award } from 'lucide-react';
 
 interface AboutPhotographerProps {
   onOpenBooking: () => void;
@@ -13,19 +13,18 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
 
           {/* Left Column: Photographer Portrait */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden glass-panel border border-amber-500/30 shadow-2xl gold-glow group">
+            <div className="relative rounded-3xl overflow-hidden bg-neutral-950 border border-neutral-800 shadow-2xl group">
               <img
                 src="https://assets.superjeffc.com/apps/jeff.jpg"
                 alt="Jeff Chan - NYC Photographer"
+                loading="eager"
+                decoding="async"
                 className="w-full h-full object-cover aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-transparent to-transparent opacity-80" />
+              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />
               
-              <div className="absolute bottom-6 left-6 right-6 space-y-1">
+              <div className="absolute bottom-6 left-6 right-6 space-y-1 z-10">
                 <h3 className="text-2xl font-serif font-bold text-white">Jeff Chan</h3>
-                <p className="text-xs text-neutral-300 flex items-center gap-1.5 pt-1">
-                  <MapPin className="w-3.5 h-3.5 text-amber-400" /> Based in Brooklyn & Queens, NY
-                </p>
               </div>
             </div>
 

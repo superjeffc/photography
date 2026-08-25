@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { SERVICE_PACKAGES, ADD_ONS, NYC_LOCATIONS } from '../data/photographyData';
-import { Check, Sparkles, DollarSign, Clock, MapPin, Layers, CheckCircle2, Zap } from 'lucide-react';
+import { Check, Sparkles, Clock, MapPin, Layers, CheckCircle2, Zap } from 'lucide-react';
 
 interface PackageCalculatorProps {
   onOpenBooking: (packageSummary: string) => void;
@@ -49,17 +49,17 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-semibold uppercase tracking-wider">
-            <DollarSign className="w-4 h-4 text-amber-400" />
-            <span>Transparent Pricing & 1-Hour Session Packages</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-300 text-xs font-bold uppercase tracking-wider shadow-lg">
+            <Sparkles className="w-4 h-4 text-amber-400" />
+            <span>Special Introductory Rates • Limited Time Launch Offer</span>
           </div>
 
           <h2 className="text-3xl sm:text-5xl font-serif text-white tracking-tight">
-            Simple Investment. <span className="text-gradient-amber italic font-normal">Unforgettable Memories.</span>
+            Introductory Rates. <span className="text-gradient-amber italic font-normal">Unforgettable Memories.</span>
           </h2>
 
           <p className="text-neutral-400 text-base sm:text-lg">
-            Choose a baseline 1-hour collection or customize your exact session with your favorite NYC photoshoot location.
+            Take advantage of special launch pricing on NYC portrait and couples sessions. Choose a package or customize your shoot.
           </p>
         </div>
 
@@ -67,6 +67,8 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-14 mb-20">
           {SERVICE_PACKAGES.map((pkg) => {
             const isSelected = pkg.id === selectedPackageId;
+            const savings = pkg.originalPrice ? pkg.originalPrice - pkg.price : 0;
+
             return (
               <div
                 key={pkg.id}
@@ -89,9 +91,19 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
                     <p className="text-neutral-400 text-xs mt-2 leading-relaxed">{pkg.tagline}</p>
                   </div>
 
-                  <div className="flex items-baseline gap-1 pt-2 border-t border-neutral-800">
-                    <span className="text-4xl sm:text-5xl font-extrabold text-white font-serif">${pkg.price}</span>
-                    <span className="text-neutral-400 text-xs">/ total</span>
+                  <div className="pt-2 border-t border-neutral-800 space-y-1">
+                    <div className="flex items-baseline gap-2">
+                      {pkg.originalPrice && (
+                        <span className="text-xl font-bold text-neutral-500 line-through">${pkg.originalPrice}</span>
+                      )}
+                      <span className="text-4xl sm:text-5xl font-extrabold text-white font-serif">${pkg.price}</span>
+                      <span className="text-neutral-400 text-xs">/ total</span>
+                    </div>
+                    {savings > 0 && (
+                      <span className="inline-block px-2.5 py-0.5 rounded-full bg-amber-500/20 text-amber-300 text-[11px] font-bold">
+                        Introductory Offer — Save ${savings}
+                      </span>
+                    )}
                   </div>
 
                   {/* Highlights Bar */}

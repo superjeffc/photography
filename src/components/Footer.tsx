@@ -49,7 +49,6 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
           <div className="space-y-3">
             <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Navigation</h4>
             <ul className="space-y-2 text-xs">
-              <li><a href="#locations" className="hover:text-amber-400 transition-colors">NYC Shoot Locations</a></li>
               <li><a href="#gallery" className="hover:text-amber-400 transition-colors">Client Portfolio</a></li>
               <li><a href="#packages" className="hover:text-amber-400 transition-colors">Pricing & Customizer</a></li>
               <li><a href="#about" className="hover:text-amber-400 transition-colors">About Jeff</a></li>
@@ -78,8 +77,8 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
                 </button>
               </li>
               <li>
-                <button onClick={() => onOpenBooking('Times Square & Neon Lights')} className="hover:text-amber-400 transition-colors text-left">
-                  Times Square Neon Lights
+                <button onClick={() => onOpenBooking('Times Square Plaza (Daylight)')} className="hover:text-amber-400 transition-colors text-left">
+                  Times Square Plaza (Daylight)
                 </button>
               </li>
             </ul>

@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
-import { LocationShowcase } from './components/LocationShowcase';
 import { PortfolioGallery } from './components/PortfolioGallery';
 import { PackageCalculator } from './components/PackageCalculator';
 import { AboutPhotographer } from './components/AboutPhotographer';
@@ -28,20 +27,17 @@ export function App() {
       <main>
         <Hero onOpenBooking={handleOpenBooking} />
 
-        {/* NYC Photoshoot Location Guide */}
-        <LocationShowcase onOpenBooking={handleOpenBooking} />
-
-        {/* Filterable Portfolio Gallery & EXIF Lightbox */}
+        {/* Client Photo Gallery & Lightbox */}
         <PortfolioGallery onOpenBooking={handleOpenBooking} />
-
-        {/* Pricing Packages & Interactive Package Customizer */}
-        <PackageCalculator onOpenBooking={handleOpenBooking} />
 
         {/* Photographer Bio & Philosophy */}
         <AboutPhotographer onOpenBooking={() => handleOpenBooking()} />
 
         {/* Testimonials */}
         <Testimonials />
+
+        {/* Pricing Packages & Interactive Package Customizer */}
+        <PackageCalculator onOpenBooking={handleOpenBooking} />
 
         {/* FAQs */}
         <FaqSection onOpenBooking={() => handleOpenBooking()} />

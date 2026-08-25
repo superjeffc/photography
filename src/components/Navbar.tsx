@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Camera, Calendar, Sparkles, Menu, X, PhoneCall } from 'lucide-react';
+import { Camera, Calendar, Menu, X, PhoneCall } from 'lucide-react';
 
 interface NavbarProps {
   onOpenBooking: (location?: string) => void;
@@ -18,11 +18,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
   }, []);
 
   const navLinks = [
-    { name: 'NYC Spots', href: '#locations' },
     { name: 'Gallery', href: '#gallery' },
-    { name: 'Packages', href: '#packages' },
     { name: 'About', href: '#about' },
     { name: 'Reviews', href: '#reviews' },
+    { name: 'Pricing', href: '#packages' },
     { name: 'FAQs', href: '#faqs' },
   ];
 
@@ -61,24 +60,13 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
             ))}
           </nav>
 
-          {/* Right Action Buttons */}
-          <div className="hidden lg:flex items-center gap-3 xl:gap-4 shrink-0">
-            <a
-              href="tel:+19293985478"
-              className="flex items-center gap-2 text-xs font-semibold text-neutral-300 hover:text-white px-3.5 py-2 rounded-lg bg-neutral-900/60 border border-neutral-800 transition-colors whitespace-nowrap shrink-0"
-            >
-              <PhoneCall className="w-3.5 h-3.5 text-amber-400 shrink-0" />
-              <span className="whitespace-nowrap">(929) 398-5478</span>
-            </a>
-
+          {/* Right Action Button */}
+          <div className="hidden lg:flex items-center gap-3 shrink-0">
             <button
               onClick={() => onOpenBooking()}
-              className="relative group overflow-hidden rounded-xl bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500 p-[1px] font-semibold shadow-lg gold-glow hover:gold-glow-lg transition-all duration-300 shrink-0"
+              className="px-4 py-2 rounded-xl bg-amber-500 hover:bg-amber-400 text-neutral-950 font-bold text-xs uppercase tracking-wider gold-glow transition-all"
             >
-              <span className="flex items-center gap-2 px-4 xl:px-5 py-2.5 rounded-[11px] bg-neutral-950 text-amber-300 text-xs xl:text-sm font-semibold group-hover:bg-transparent group-hover:text-neutral-950 transition-all duration-300 whitespace-nowrap">
-                <Sparkles className="w-4 h-4 shrink-0" />
-                Book NYC Session
-              </span>
+              Book Session
             </button>
           </div>
 

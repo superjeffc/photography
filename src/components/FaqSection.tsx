@@ -101,7 +101,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
         <div className="mt-12 text-center p-8 rounded-2xl glass-panel-amber border border-amber-500/30 space-y-3">
           <h3 className="text-xl font-bold text-white font-serif">Have a custom request or specific date in mind?</h3>
           <p className="text-neutral-300 text-sm max-w-xl mx-auto">
-            Send a quick message and Jeff will get back to you within 2 hours with available dates and custom route suggestions!
+            Send a quick message and Jeff will get back to you within 24 hours with available dates and custom route suggestions!
           </p>
           <div className="pt-2">
             <button
