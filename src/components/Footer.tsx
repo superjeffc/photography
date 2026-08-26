@@ -50,6 +50,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <h4 className="text-xs font-bold text-white uppercase tracking-wider font-mono">Navigation</h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#gallery" className="hover:text-amber-400 transition-colors">Client Portfolio</a></li>
+              <li><a href="#locations" className="hover:text-amber-400 transition-colors">NYC Locations</a></li>
               <li><a href="#packages" className="hover:text-amber-400 transition-colors">Pricing & Customizer</a></li>
               <li><a href="#about" className="hover:text-amber-400 transition-colors">About Jeff</a></li>
               <li><a href="#reviews" className="hover:text-amber-400 transition-colors">Client Reviews</a></li>

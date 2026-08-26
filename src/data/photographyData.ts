@@ -138,7 +138,7 @@ export const NYC_LOCATIONS: LocationItem[] = [
     description: 'High-energy NYC street photography among iconic red stairs, Broadway theater marquees, and dynamic Manhattan streetscapes in natural daylight.',
     bestTime: 'Morning / Afternoon Daylight (Golden Hour)',
     sessionTypes: ['Daylight Street Portraits', 'Urban Fashion', 'Personal Branding'],
-    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
+    image: '/images/times_square.jpg',
     featured: false,
     highlights: ['Red Glass Stairs', 'Broadway Theatre Marquees', 'Iconic Billboard Architecture', 'Pedestrian Plaza Streetscapes'],
     coordinates: '40.7580° N, 73.9855° W'

@@ -19,9 +19,9 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
                 alt="Jeff Chan - NYC Photographer"
                 loading="eager"
                 decoding="async"
-                className="w-full h-full object-cover aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
+                className="w-full h-full object-cover object-left aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/20 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-neutral-950/90 via-neutral-950/40 to-transparent pointer-events-none" />
               
               <div className="absolute bottom-6 left-6 right-6 space-y-1 z-10">
                 <h3 className="text-2xl font-serif font-bold text-white">Jeff Chan</h3>
