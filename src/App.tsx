@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
-import { Hero } from './components/Hero';
 import { PortfolioGallery } from './components/PortfolioGallery';
 import { LocationShowcase } from './components/LocationShowcase';
 import { PackageCalculator } from './components/PackageCalculator';
@@ -20,14 +19,12 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-100 font-sans antialiased">
+    <div className="min-h-screen bg-[#faf8f5] text-slate-800 font-sans antialiased">
       {/* Top Navbar */}
       <Navbar onOpenBooking={handleOpenBooking} />
 
-      {/* Main Hero Section */}
+      {/* Main Section */}
       <main>
-        <Hero onOpenBooking={handleOpenBooking} />
-
         {/* Client Photo Gallery & Lightbox */}
         <PortfolioGallery onOpenBooking={handleOpenBooking} />
 
