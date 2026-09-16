@@ -62,21 +62,32 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
     if (scriptUrl) {
       try {
-        await fetch(scriptUrl, {
+        const payload = {
+          inquiryId: randomId,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          location: formData.location,
+          sessionType: formData.sessionType,
+          date: formData.date,
+          message: selectedPackage ? `[Package: ${selectedPackage}] ${formData.message}`.trim() : formData.message,
+        };
+
+        const response = await fetch(scriptUrl, {
           method: 'POST',
-          mode: 'no-cors',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            inquiryId: randomId,
-            name: formData.name,
-            email: formData.email,
-            phone: formData.phone,
-            date: formData.date,
-            location: formData.location,
-            sessionType: formData.sessionType,
-            message: selectedPackage ? `[Package: ${selectedPackage}] ${formData.message}`.trim() : formData.message,
-          })
+          headers: {
+            // Crucial: Avoids OPTIONS preflight so Apps Script receives e.postData intact
+            'Content-Type': 'text/plain;charset=utf-8',
+          },
+          body: JSON.stringify(payload),
         });
+
+        try {
+          const result = await response.json();
+          console.log('Form submission result:', result);
+        } catch {
+          console.log('Form submitted successfully to Google Apps Script');
+        }
       } catch (err) {
         console.error('Failed to dispatch Google Script Webhook:', err);
       }
