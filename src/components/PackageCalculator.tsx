@@ -23,7 +23,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
           </h2>
 
           <p className="text-slate-600 text-base sm:text-lg">
-            Special beginner-friendly launch pricing on NYC portrait and couples sessions. Transparent, all-inclusive pricing with no hidden fees.
+            Special introductory launch pricing on NYC portrait and couples sessions. Transparent, all-inclusive pricing with no hidden fees.
           </p>
         </div>
 
