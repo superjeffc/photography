@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, Heart, Sun, Award } from 'lucide-react';
+import { Heart, Sun, Award, Sparkles } from 'lucide-react';
 
 interface AboutPhotographerProps {
   onOpenBooking: () => void;
@@ -11,7 +11,7 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
 
-          {/* Left Column: Photographer Portrait */}
+          {/* Left Column: Photographer Portrait (3:2 landscape) */}
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xl group">
               <img
@@ -19,20 +19,21 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
                 alt="Jeff Chan - NYC Photographer"
                 loading="eager"
                 decoding="async"
-                className="w-full h-full object-cover object-left aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[3/2] object-cover object-center transition-transform duration-500 group-hover:scale-105"
               />
-              <div className="absolute bottom-0 left-0 right-0 h-28 bg-gradient-to-t from-slate-950/80 via-slate-950/40 to-transparent pointer-events-none" />
+              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/30 to-transparent pointer-events-none" />
               
-              <div className="absolute bottom-6 left-6 right-6 space-y-1 z-10">
+              <div className="absolute bottom-5 left-6 right-6 space-y-0.5 z-10">
                 <h3 className="text-2xl font-serif font-bold text-white">Jeff Chan</h3>
+                <p className="text-xs text-amber-300 font-medium">NYC Portrait & Couples Photographer</p>
               </div>
             </div>
 
             {/* Experience Floating Badge */}
-            <div className="absolute -bottom-5 right-4 bg-amber-500 text-white px-4 py-3 rounded-2xl shadow-xl font-serif font-bold border-2 border-white hidden sm:flex items-center gap-3 gold-glow">
-              <Award className="w-7 h-7 shrink-0" />
+            <div className="absolute -bottom-4 right-4 bg-amber-500 text-white px-4 py-2.5 rounded-2xl shadow-xl font-serif font-bold border-2 border-white hidden sm:flex items-center gap-2.5 gold-glow">
+              <Award className="w-6 h-6 shrink-0" />
               <div>
-                <p className="text-lg font-extrabold leading-none">Relaxed & Candid</p>
+                <p className="text-base font-extrabold leading-none">Relaxed & Candid</p>
                 <p className="text-[10px] font-sans font-semibold text-amber-100 uppercase mt-0.5">Natural NYC Sessions</p>
               </div>
             </div>
@@ -70,18 +71,19 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
 
               <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1 shadow-sm">
                 <div className="flex items-center gap-2 text-amber-800 font-bold text-sm">
-                  <Camera className="w-4 h-4 text-amber-600" /> Professional Sony Setup
+                  <Sparkles className="w-4 h-4 text-amber-600" /> Natural, Guided Posing
                 </div>
                 <p className="text-xs text-slate-600">
-                  Shooting with a full-frame Sony A7C II paired with a versatile FE 24-50mm f/2.8 G zoom lens.
+                  Zero stiff or awkward posing. I guide you with easy, fun prompts so you look and feel completely natural.
                 </p>
               </div>
             </div>
 
-            {/* Gear & Guarantee */}
+            {/* Location & Booking Availability */}
             <div className="pt-4 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-4">
-              <div className="text-xs text-slate-500 font-mono">
-                <span>Gear: Sony A7C II • FE 24-50mm f/2.8 G</span>
+              <div className="text-xs text-slate-600 flex items-center gap-2 font-medium">
+                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                <span>NYC Local • Available Across Manhattan, Brooklyn & Queens</span>
               </div>
 
               <button

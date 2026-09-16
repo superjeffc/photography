@@ -3,10 +3,10 @@ import { Camera, MapPin, Globe, ArrowUp } from 'lucide-react';
 import { ProtectedEmail, ProtectedPhone } from './ProtectedContact';
 
 interface FooterProps {
-  onOpenBooking: (location?: string) => void;
+  onOpenBooking?: (location?: string) => void;
 }
 
-export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
+export const Footer: React.FC<FooterProps> = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -14,7 +14,7 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
   return (
     <footer className="bg-slate-100 border-t border-slate-200 text-slate-600 text-sm relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
 
           {/* Brand Col */}
           <div className="lg:col-span-2 space-y-4">
@@ -50,38 +50,9 @@ export const Footer: React.FC<FooterProps> = ({ onOpenBooking }) => {
             <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Navigation</h4>
             <ul className="space-y-2 text-xs">
               <li><a href="#gallery" className="hover:text-amber-600 transition-colors">Client Portfolio</a></li>
-              <li><a href="#locations" className="hover:text-amber-600 transition-colors">NYC Locations</a></li>
-              <li><a href="#packages" className="hover:text-amber-600 transition-colors">Pricing & Customizer</a></li>
+              <li><a href="#packages" className="hover:text-amber-600 transition-colors">Pricing Packages</a></li>
               <li><a href="#about" className="hover:text-amber-600 transition-colors">About Jeff</a></li>
-              <li><a href="#reviews" className="hover:text-amber-600 transition-colors">Client Reviews</a></li>
               <li><a href="#faqs" className="hover:text-amber-600 transition-colors">FAQs & Policies</a></li>
-            </ul>
-          </div>
-
-          {/* Featured Spots */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Featured Spots</h4>
-            <ul className="space-y-2 text-xs">
-              <li>
-                <button onClick={() => onOpenBooking('Central Park & Bow Bridge')} className="hover:text-amber-600 transition-colors text-left">
-                  Central Park Bow Bridge
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onOpenBooking('SoHo Cast-Iron District')} className="hover:text-amber-600 transition-colors text-left">
-                  SoHo Cast-Iron Facades
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onOpenBooking('Brooklyn Bridge Walkway')} className="hover:text-amber-600 transition-colors text-left">
-                  Brooklyn Bridge Sunrise
-                </button>
-              </li>
-              <li>
-                <button onClick={() => onOpenBooking('Times Square Plaza (Daylight)')} className="hover:text-amber-600 transition-colors text-left">
-                  Times Square Plaza (Daylight)
-                </button>
-              </li>
             </ul>
           </div>
 

@@ -1,10 +1,8 @@
 import { useState } from 'react';
 import { Navbar } from './components/Navbar';
 import { PortfolioGallery } from './components/PortfolioGallery';
-import { LocationShowcase } from './components/LocationShowcase';
 import { PackageCalculator } from './components/PackageCalculator';
 import { AboutPhotographer } from './components/AboutPhotographer';
-import { Testimonials } from './components/Testimonials';
 import { FaqSection } from './components/FaqSection';
 import { BookingModal } from './components/BookingModal';
 import { Footer } from './components/Footer';
@@ -28,16 +26,10 @@ export function App() {
         {/* Client Photo Gallery & Lightbox */}
         <PortfolioGallery onOpenBooking={handleOpenBooking} />
 
-        {/* Curated NYC Photoshoot Locations */}
-        <LocationShowcase onOpenBooking={handleOpenBooking} />
-
         {/* Photographer Bio & Philosophy */}
         <AboutPhotographer onOpenBooking={() => handleOpenBooking()} />
 
-        {/* Testimonials */}
-        <Testimonials />
-
-        {/* Pricing Packages & Interactive Package Customizer */}
+        {/* Pricing Packages */}
         <PackageCalculator onOpenBooking={handleOpenBooking} />
 
         {/* FAQs */}

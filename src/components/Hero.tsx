@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, Star, ArrowRight, ShieldCheck, Camera, Sun } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck, Camera, Sun } from 'lucide-react';
 
 interface HeroProps {
   onOpenBooking: (location?: string) => void;
@@ -74,11 +74,11 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
             <div className="flex items-center justify-center gap-3 p-3.5 rounded-2xl glass-panel border border-slate-200/80 shadow-sm">
               <div className="w-10 h-10 rounded-lg bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 shrink-0">
-                <Star className="w-5 h-5 fill-amber-500 text-amber-500" />
+                <Sparkles className="w-5 h-5 text-amber-600" />
               </div>
               <div className="text-left">
-                <p className="text-xl font-bold text-slate-900 leading-none">5.0 ★★★★★</p>
-                <p className="text-xs text-slate-600 mt-1">Google Reviews</p>
+                <p className="text-xl font-bold text-slate-900 leading-none">Candid</p>
+                <p className="text-xs text-slate-600 mt-1">Natural Direction</p>
               </div>
             </div>
 

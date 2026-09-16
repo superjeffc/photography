@@ -231,8 +231,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'express',
     name: 'The 30-Minute NYC Express',
     tagline: 'Ideal for quick solo portraits, simple headshots, or a fast couples shoot in 1 NYC spot.',
-    price: 195,
-    originalPrice: 350,
+    price: 95,
+    originalPrice: 175,
     duration: '30 Minutes',
     locationsCount: 1,
     editedPhotos: 15,
@@ -250,8 +250,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'signature',
     name: 'The Signature 1-Hour Session',
     tagline: 'Our most popular session for couples and individual portrait shoots.',
-    price: 295,
-    originalPrice: 550,
+    price: 150,
+    originalPrice: 275,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 30,
@@ -272,8 +272,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'deluxe',
     name: 'The Deluxe 1-Hour Storybook',
     tagline: 'Maximum edited photos and priority turnaround packed into a focused 1-hour session.',
-    price: 450,
-    originalPrice: 750,
+    price: 225,
+    originalPrice: 395,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 50,
@@ -294,19 +294,19 @@ export const ADD_ONS: AddOnItem[] = [
   {
     id: 'expedited-delivery',
     name: '24-Hour Express Gallery Turnaround',
-    price: 175,
+    price: 65,
     description: 'Get your full edited high-resolution digital photo gallery within 24 hours of your shoot.'
   },
   {
     id: 'extra-edits',
     name: '15 Extra Edited High-Res Photos',
-    price: 125,
+    price: 45,
     description: 'Receive 15 additional hand-edited high-resolution digital photos in your final gallery.'
   },
   {
     id: 'raw-files',
     name: 'Complete Unedited RAW Image Archive',
-    price: 200,
+    price: 65,
     description: 'Receive all full-resolution unedited RAW files from your session alongside your edited gallery.'
   }
 ];
