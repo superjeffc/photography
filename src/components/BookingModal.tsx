@@ -52,7 +52,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
     const randomId = 'NYC-' + Math.floor(100000 + Math.random() * 900000);
     setInquiryId(randomId);
 
-    const scriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbwNr8X57CIFu66gltp4sRB4Q0H_lnnS6WVqRuBNME0M5g02Swrnb8021nmPpDxPnttq/exec';
+    const scriptUrl = import.meta.env.VITE_GOOGLE_SCRIPT_URL || 'https://script.google.com/macros/s/AKfycbxYbk1jeqQnI8E7URxiZ5kmpxNKLWVJP5LldClN43qQd4lDZ_gS54JyYgIeS7miGdf6/exec';
 
     if (scriptUrl) {
       try {
