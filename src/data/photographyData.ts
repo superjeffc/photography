@@ -136,8 +136,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'express',
     name: 'The 30-Minute NYC Express',
     tagline: 'Ideal for quick solo portraits, simple headshots, or a fast couples shoot in 1 NYC spot.',
-    price: 95,
-    originalPrice: 175,
+    price: 150,
+    originalPrice: 225,
     duration: '30 Minutes',
     locationsCount: 1,
     editedPhotos: 15,
@@ -145,9 +145,8 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     features: [
       '1 Iconic NYC Location',
       '15 High-Res Hand-Edited Digital Photos',
-      'Online Private High-Res Digital Gallery',
+      'Private Online Digital Gallery',
       'Full Personal Digital Usage & Downloading Rights',
-      'Location & Outfit Preparation Guide',
       '5-7 Day Standard Photo Delivery'
     ]
   },
@@ -155,42 +154,39 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'signature',
     name: 'The Signature 1-Hour Session',
     tagline: 'Our most popular session for couples and individual portrait shoots.',
-    price: 150,
-    originalPrice: 275,
+    price: 225,
+    originalPrice: 325,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 30,
-    outfitChanges: 2,
+    outfitChanges: 1,
     popular: true,
     features: [
       '1 Iconic NYC Location (60 Mins Maximum)',
       '30 High-Res Hand-Edited Digital Photos',
-      'Up to 2 Outfit Changes included',
-      'Pre-session Location & Route Strategy',
-      'Sneak Peek Preview (5 photos within 48 hours)',
-      'Online Private High-Res Digital Gallery',
+      'Gentle Posing Guidance & Direction',
+      'Private Online Digital Gallery',
       'Full Personal Digital Usage & Downloading Rights',
-      'Golden Hour Timing Strategy'
+      '5-7 Day Standard Photo Delivery'
     ]
   },
   {
     id: 'deluxe',
     name: 'The Deluxe 1-Hour Storybook',
-    tagline: 'Maximum edited photos and priority turnaround packed into a focused 1-hour session.',
-    price: 225,
-    originalPrice: 395,
+    tagline: 'More photos and extended coverage for a complete gallery of memories.',
+    price: 325,
+    originalPrice: 450,
     duration: '60 Minutes (1 Hr Max)',
     locationsCount: 1,
     editedPhotos: 50,
-    outfitChanges: 2,
+    outfitChanges: 1,
     features: [
       '1 Iconic NYC Location (60 Mins Maximum)',
       '50+ High-Res Hand-Edited Digital Photos',
-      '2 Outfit Changes included',
-      '24-Hour Expedited Sneak Peek Gallery (10 photos)',
-      'Private High-Res Digital Gallery & Custom Slideshow',
-      'Priority 3-Day Full Gallery Turnaround',
-      'Full Personal & Commercial Digital Usage Rights'
+      'Gentle Posing Guidance & Direction',
+      'Private Online Digital Gallery',
+      'Full Personal Digital Usage & Downloading Rights',
+      '5-7 Day Standard Photo Delivery'
     ]
   }
 ];

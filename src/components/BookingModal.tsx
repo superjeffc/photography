@@ -13,12 +13,14 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   onClose,
   initialLocation = ''
 }) => {
+  const isPackage = initialLocation?.includes('($');
+  const [selectedPackage, setSelectedPackage] = useState(isPackage ? initialLocation : '');
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
     date: '',
-    location: initialLocation || 'Central Park & Bow Bridge',
+    location: !isPackage && initialLocation ? initialLocation : 'Central Park & Bow Bridge',
     sessionType: 'Couples',
     guestsCount: '2 People',
     message: '',
@@ -32,7 +34,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
   useEffect(() => {
     if (initialLocation) {
-      setFormData((prev) => ({ ...prev, location: initialLocation }));
+      if (initialLocation.includes('($')) {
+        setSelectedPackage(initialLocation);
+      } else {
+        setFormData((prev) => ({ ...prev, location: initialLocation }));
+      }
     }
   }, [initialLocation]);
 
@@ -68,7 +74,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             date: formData.date,
             location: formData.location,
             sessionType: formData.sessionType,
-            message: formData.message,
+            message: selectedPackage ? `[Package: ${selectedPackage}] ${formData.message}`.trim() : formData.message,
           })
         });
       } catch (err) {
@@ -118,11 +124,18 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 <span>Instant Availability & Booking Inquiry</span>
               </div>
               <h3 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900">
-                Book Your <span className="text-gradient-amber">1-Hour NYC Photography Shoot</span>
+                Book Your <span className="text-gradient-amber">NYC Photography Shoot</span>
               </h3>
               <p className="text-xs sm:text-sm text-slate-600">
                 Fill out the form below to lock in your preferred date for your NYC photo session.
               </p>
+              {selectedPackage && (
+                <div className="pt-1">
+                  <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-amber-500/15 border border-amber-500/30 text-amber-900 text-xs font-semibold">
+                    Package: {selectedPackage}
+                  </span>
+                </div>
+              )}
             </div>
 
             {/* Form */}
@@ -293,6 +306,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             </div>
 
             <div className="p-5 rounded-2xl bg-slate-50 border border-amber-300 max-w-md mx-auto text-left text-xs space-y-2 shadow-sm">
+              {selectedPackage && (
+                <div className="flex justify-between border-b border-slate-200 pb-2">
+                  <span className="text-slate-500">Package:</span>
+                  <span className="font-bold text-amber-700">{selectedPackage}</span>
+                </div>
+              )}
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500">Location:</span>
                 <span className="font-bold text-slate-900">{formData.location}</span>
