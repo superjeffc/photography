@@ -72,7 +72,7 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'DUMBO, Brooklyn',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/dumbo2.jpg',
+    image: 'https://assets.superjeffc.com/apps/little-island.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/800s @ f/2.8, ISO 100',
     story: 'Captured on a crisp November evening. The golden hour sun peeked right through the Manhattan Bridge superstructure, creating a warm magical glow.'
@@ -98,7 +98,7 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Gantry Plaza State Park, Queens',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: 'https://assets.superjeffc.com/apps/gantry-state-park3.jpg',
+    image: 'https://assets.superjeffc.com/apps/chinatown1.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/2000s @ f/2.8, ISO 100',
     story: 'Sunset light reflecting off the East River piers at Gantry Plaza State Park with clear views of the Midtown Manhattan skyline.'
@@ -124,7 +124,7 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Gantry Plaza State Park, Queens',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/gantry-state-park2.jpg',
+    image: 'https://assets.superjeffc.com/apps/chinatown2.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1000s @ f/2.8, ISO 100',
     story: 'A serene twilight session along the restored industrial gantries and East River wooden promenade at Gantry Plaza State Park.'
