@@ -1,17 +1,3 @@
-export interface LocationItem {
-  id: string;
-  name: string;
-  area: string;
-  borough: string;
-  description: string;
-  bestTime: string;
-  sessionTypes: string[];
-  image: string;
-  featured: boolean;
-  highlights: string[];
-  coordinates: string;
-}
-
 export interface PortfolioItem {
   id: string;
   title: string;
@@ -63,87 +49,6 @@ export interface FaqItem {
   answer: string;
   category: 'booking' | 'locations' | 'weather' | 'delivery';
 }
-
-export const NYC_LOCATIONS: LocationItem[] = [
-  {
-    id: 'central-park',
-    name: 'Central Park & Bow Bridge',
-    area: 'Upper West / East Side',
-    borough: 'Manhattan',
-    description: 'Timeless NYC romance surrounded by natural trees, serene lake waters, classic stone arches, and the elegant curves of Bow Bridge overlooking San Remo towers.',
-    bestTime: 'Early Morning (7:00 AM - 9:00 AM)',
-    sessionTypes: ['Romantic Couples', 'Solo Portraits', 'Wedding Portraits', 'Maternity'],
-    image: '/images/central_park.jpg',
-    featured: true,
-    highlights: ['Bow Bridge Lake Reflection', 'Bethesda Terrace Arcade', 'The Mall Elm Tree Canopy', 'Conservatory Water'],
-    coordinates: '40.7757° N, 73.9712° W'
-  },
-  {
-    id: 'soho',
-    name: 'SoHo Cast-Iron District',
-    area: 'Lower Manhattan',
-    borough: 'Manhattan',
-    description: 'Urban architectural aesthetic featuring 19th-century cast-iron architecture, cobblestone avenues, black wrought iron fire escapes, and chic store fronts.',
-    bestTime: 'Morning (8:00 AM - 10:30 AM)',
-    sessionTypes: ['Street Portraits', 'Personal Branding', 'Modeling Portfolios', 'Chic Streetwear'],
-    image: '/images/soho_fashion.jpg',
-    featured: true,
-    highlights: ['Greene St Cast-Iron Lofts', 'Spring Street Cobblestones', 'Black Fire Escape Architecture', 'Chic Urban Vibe'],
-    coordinates: '40.7233° N, 74.0030° W'
-  },
-  {
-    id: 'brooklyn-bridge',
-    name: 'Brooklyn Bridge Walkway',
-    area: 'East River Span',
-    borough: 'Manhattan / Brooklyn',
-    description: 'Gothic stone arches and geometric steel cables floating high above the East River with Lower Manhattan financial district towering in the light.',
-    bestTime: 'Sunrise (6:00 AM - 7:30 AM strictly recommended)',
-    sessionTypes: ['Anniversary & Couples', 'Fine Art Portraits', 'Graduation', 'Fitness & Lifestyle'],
-    image: '/images/brooklyn_bridge.jpg',
-    featured: false,
-    highlights: ['Gothic Stone Towers', 'Wooden Promenade Planks', 'Lower Manhattan Skyline', 'Sunrise Light Flare'],
-    coordinates: '40.7061° N, 73.9969° W'
-  },
-  {
-    id: 'dumbo',
-    name: 'DUMBO & Washington St',
-    area: 'Brooklyn Waterfront',
-    borough: 'Brooklyn',
-    description: 'Classic NYC setting featuring cobblestone streets framed by historic red brick loft buildings with the Manhattan Bridge rising in the backdrop.',
-    bestTime: 'Sunrise to 8:30 AM or Golden Hour (1 hr before sunset)',
-    sessionTypes: ['Couples', 'Solo Portraits', 'Anniversary Shoots', 'Street Portraits'],
-    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
-    featured: false,
-    highlights: ['Washington St Bridge Framing', 'Jane’s Carousel Waterfront', 'Pebble Beach Skyline Views', 'Classic Cobblestone Alleyways'],
-    coordinates: '40.7033° N, 73.9881° W'
-  },
-  {
-    id: 'gantry-park',
-    name: 'Gantry Plaza State Park',
-    area: 'Hunters Point Waterfront',
-    borough: 'Queens (LIC)',
-    description: 'Unobstructed panoramic views of the Midtown Manhattan skyline, East River piers, manicured lawns, and the vintage red neon Pepsi-Cola sign.',
-    bestTime: 'Sunset to Twilight (Golden & Blue Hour)',
-    sessionTypes: ['Couples', 'Family Portraits', 'Personal Branding', 'Sunset Romance'],
-    image: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
-    featured: false,
-    highlights: ['Historic Pepsi-Cola Neon Sign', 'Midtown Skyline (Empire State & Chrysler)', 'Restored Industrial Gantries', 'Waterfront Wooden Loungers'],
-    coordinates: '40.7456° N, 73.9582° W'
-  },
-  {
-    id: 'times-square',
-    name: 'Times Square Plaza (Daylight)',
-    area: 'Midtown Theatre District',
-    borough: 'Manhattan',
-    description: 'High-energy NYC street photography among iconic red stairs, Broadway theater marquees, and dynamic Manhattan streetscapes in natural daylight.',
-    bestTime: 'Morning / Afternoon Daylight (Golden Hour)',
-    sessionTypes: ['Daylight Street Portraits', 'Urban Fashion', 'Personal Branding'],
-    image: '/images/times_square.jpg',
-    featured: false,
-    highlights: ['Red Glass Stairs', 'Broadway Theatre Marquees', 'Iconic Billboard Architecture', 'Pedestrian Plaza Streetscapes'],
-    coordinates: '40.7580° N, 73.9855° W'
-  }
-];
 
 export const PORTFOLIO_GALLERY: PortfolioItem[] = [
   {
