@@ -13,19 +13,23 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
 
           {/* Left Column: Photographer Portrait (3:2 landscape) */}
           <div className="lg:col-span-5 relative">
-            <div className="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/80 shadow-xl group">
+            <div className="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-xl">
               <img
                 src="https://assets.superjeffc.com/apps/jeff.jpg"
                 alt="Jeff Chan - NYC Photographer"
                 loading="eager"
                 decoding="async"
-                className="w-full aspect-[3/2] object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                className="w-full aspect-[3/2] object-cover object-center"
               />
-              <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-slate-950/70 via-slate-950/30 to-transparent pointer-events-none" />
-              
-              <div className="absolute bottom-5 left-6 right-6 space-y-0.5 z-10">
-                <h3 className="text-2xl font-serif font-bold text-white">Jeff Chan</h3>
-                <p className="text-xs text-amber-300 font-medium">NYC Portrait & Couples Photographer</p>
+
+              {/* Top Left Floating Pill Badges (matches Gallery style) */}
+              <div className="absolute top-4 left-4 flex items-center gap-2 z-10">
+                <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-slate-800 border border-slate-200/80 text-xs font-semibold shadow-md">
+                  Jeff Chan
+                </span>
+                <span className="px-3 py-1.5 rounded-full bg-white/95 text-amber-700 border border-slate-200/80 text-xs font-medium shadow-md">
+                  NYC Photographer
+                </span>
               </div>
             </div>
 
