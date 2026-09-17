@@ -19,6 +19,7 @@ export interface PackageItem {
   price: number;
   originalPrice?: number;
   duration: string;
+  partySize: string;
   locationsCount: number;
   editedPhotos: number;
   outfitChanges: number;
@@ -139,11 +140,13 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     price: 150,
     originalPrice: 225,
     duration: '30 Minutes',
+    partySize: 'Up to 2 People',
     locationsCount: 1,
     editedPhotos: 15,
     outfitChanges: 1,
     features: [
-      'One Location (60 Mins Maximum)',
+      'One Location (30 Mins Maximum)',
+      'Up to 2 People Included',
       '15 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
@@ -155,12 +158,14 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     price: 225,
     originalPrice: 325,
     duration: '60 Minutes (1 Hr Max)',
+    partySize: 'Up to 2 People',
     locationsCount: 1,
     editedPhotos: 30,
     outfitChanges: 1,
     popular: true,
     features: [
       'One Location (60 Mins Maximum)',
+      'Up to 2 People Included',
       '30 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
@@ -172,11 +177,13 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     price: 325,
     originalPrice: 450,
     duration: '60 Minutes (1 Hr Max)',
+    partySize: 'Up to 2 People',
     locationsCount: 1,
     editedPhotos: 50,
     outfitChanges: 1,
     features: [
       'One Location (60 Mins Maximum)',
+      'Up to 2 People Included',
       '50 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
@@ -184,6 +191,12 @@ export const SERVICE_PACKAGES: PackageItem[] = [
 ];
 
 export const ADD_ONS: AddOnItem[] = [
+  {
+    id: 'extra-guest',
+    name: 'Additional Guest (Family / Group)',
+    price: 35,
+    description: 'Add an extra person beyond the 2 included guests (+$35/person for group and individual portraits).'
+  },
   {
     id: 'expedited-delivery',
     name: '24-Hour Express Gallery Turnaround',
@@ -262,6 +275,11 @@ export const FAQS: FaqItem[] = [
     category: 'locations',
     question: 'Do you help with posing and direction during the shoot?',
     answer: 'Absolutely! Throughout the entire shoot, Jeff will guide and direct you with gentle, natural prompts and movement so you never have to worry about how to pose or feel stiff or staged.'
+  },
+  {
+    category: 'booking',
+    question: 'How many people can join the photoshoot?',
+    answer: 'All packages include up to 2 people, making them perfect for solo portraits, couples, or friends. If you are bringing a family or larger group (3+ people), additional guests can be added for $35 per person. For groups and families, we recommend our 60-Minute Signature or Deluxe sessions to ensure plenty of camera time for both group portraits and individual photos.'
   }
 ];
 

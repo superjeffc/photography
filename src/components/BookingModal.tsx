@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import confetti from 'canvas-confetti';
-import { X, Sparkles, MapPin, CheckCircle2, Mail, Clock, Send, Camera } from 'lucide-react';
+import { X, Sparkles, MapPin, CheckCircle2, Mail, Clock, Send, Camera, Users } from 'lucide-react';
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -69,8 +69,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
           phone: formData.phone,
           location: formData.location,
           sessionType: formData.sessionType,
+          guestsCount: formData.guestsCount,
           date: formData.date,
-          message: selectedPackage ? `[Package: ${selectedPackage}] ${formData.message}`.trim() : formData.message,
+          message: selectedPackage
+            ? `[Package: ${selectedPackage}] [Party: ${formData.guestsCount}] ${formData.message}`.trim()
+            : `[Party: ${formData.guestsCount}] ${formData.message}`.trim(),
         };
 
         const response = await fetch(scriptUrl, {
@@ -264,6 +267,27 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 </div>
               </div>
 
+              {/* Row 4: Party Size / Group Size */}
+              <div>
+                <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5 flex items-center justify-between">
+                  <span className="flex items-center gap-1">
+                    <Users className="w-3.5 h-3.5 text-amber-600" /> Party Size / Number of People *
+                  </span>
+                  <span className="text-[11px] text-slate-500 font-normal lowercase">Up to 2 people included</span>
+                </label>
+                <select
+                  value={formData.guestsCount}
+                  onChange={(e) => setFormData({ ...formData, guestsCount: e.target.value })}
+                  className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 focus:bg-white transition-colors"
+                >
+                  <option value="1 Person (Solo)">1 Person (Solo Portrait / Headshot)</option>
+                  <option value="2 People (Couples / Duo)">2 People (Couples / Duo — Base Package Included)</option>
+                  <option value="3 People (+$35)">3 People (+1 Additional Guest: +$35)</option>
+                  <option value="4 People (+$70)">4 People (+2 Additional Guests: +$70)</option>
+                  <option value="5+ People (Family / Group)">5+ People (Family / Group)</option>
+                </select>
+              </div>
+
               {/* Message / Details */}
               <div>
                 <label className="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1.5">
@@ -330,6 +354,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500">Session Type:</span>
                 <span className="font-bold text-slate-900">{formData.sessionType}</span>
+              </div>
+              <div className="flex justify-between border-b border-slate-200 pb-2">
+                <span className="text-slate-500">Party Size:</span>
+                <span className="font-bold text-slate-900">{formData.guestsCount}</span>
               </div>
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500">Requested Date:</span>

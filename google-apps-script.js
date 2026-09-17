@@ -28,6 +28,7 @@ function doPost(e) {
     var phone = data.phone || "No phone provided";
     var location = data.location || "Not specified";
     var sessionType = data.sessionType || "Not specified";
+    var guestsCount = data.guestsCount || "Up to 2 People";
     var date = data.date || "Flexible / Not specified";
     var message = data.message || "None provided";
 
@@ -44,6 +45,7 @@ function doPost(e) {
           "<tr><td style='padding: 8px 0; font-weight: bold;'>Phone / WhatsApp:</td><td>" + phone + "</td></tr>" +
           "<tr><td style='padding: 8px 0; font-weight: bold;'>NYC Location:</td><td><strong>" + location + "</strong></td></tr>" +
           "<tr><td style='padding: 8px 0; font-weight: bold;'>Session Type:</td><td>" + sessionType + "</td></tr>" +
+          "<tr><td style='padding: 8px 0; font-weight: bold;'>Party Size:</td><td>" + guestsCount + "</td></tr>" +
           "<tr><td style='padding: 8px 0; font-weight: bold;'>Requested Date:</td><td>" + date + "</td></tr>" +
         "</table>" +
         "<br>" +
