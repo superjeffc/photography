@@ -195,7 +195,7 @@ export const ADD_ONS: AddOnItem[] = [
     id: 'extra-guest',
     name: 'Additional Guest (Family / Group)',
     price: 35,
-    description: 'Add an extra person beyond the 2 included guests (+$35/person for group and individual portraits).'
+    description: 'Add an extra person beyond the 2 included guests (+$50/person for group and individual portraits).'
   },
   {
     id: 'expedited-delivery',
