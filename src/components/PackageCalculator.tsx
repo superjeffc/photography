@@ -1,6 +1,6 @@
 import React from 'react';
 import { SERVICE_PACKAGES } from '../data/photographyData';
-import { Sparkles, Clock, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
+import { Sparkles, Clock, Users, Layers, CheckCircle2, ArrowRight } from 'lucide-react';
 
 interface PackageCalculatorProps {
   onOpenBooking: (packageSummary: string) => void;
@@ -60,15 +60,19 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
                     )}
                   </div>
 
-                  {/* Highlights Bar */}
-                  <div className="grid grid-cols-2 gap-2 text-xs font-mono">
-                    <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-2">
-                      <Clock className="w-3.5 h-3.5 text-amber-600" />
-                      <span>{pkg.duration}</span>
+                  {/* Highlights Bar: Duration, Party Size, Edits */}
+                  <div className="grid grid-cols-3 gap-2 text-xs font-mono">
+                    <div className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center justify-center gap-1.5 text-center">
+                      <Clock className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                      <span className="truncate">{pkg.duration.replace(' (1 Hr Max)', '')}</span>
                     </div>
-                    <div className="p-2.5 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center gap-2">
-                      <Layers className="w-3.5 h-3.5 text-amber-600" />
-                      <span>{pkg.editedPhotos} Edits</span>
+                    <div className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center justify-center gap-1.5 text-center">
+                      <Users className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                      <span className="truncate">{pkg.partySize}</span>
+                    </div>
+                    <div className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center justify-center gap-1.5 text-center">
+                      <Layers className="w-3.5 h-3.5 text-amber-600 shrink-0" />
+                      <span className="truncate">{pkg.editedPhotos} Edits</span>
                     </div>
                   </div>
 
@@ -99,6 +103,22 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
               </div>
             );
           })}
+        </div>
+
+        {/* Family & Group Policy Callout */}
+        <div className="mt-12 max-w-4xl mx-auto p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80 shadow-sm flex flex-col sm:flex-row items-start sm:items-center gap-4 text-left">
+          <div className="w-12 h-12 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 shrink-0">
+            <Users className="w-6 h-6" />
+          </div>
+          <div className="space-y-1 text-xs sm:text-sm">
+            <h4 className="font-bold text-slate-900 font-serif text-base">Planning a Family or Group Photoshoot?</h4>
+            <p className="text-slate-600 leading-relaxed">
+              All packages include up to <strong>2 people</strong> (ideal for solo portraits, couples, or friends). For families and groups of 3 or more, additional guests are <strong>$35/person</strong> to accommodate group combinations and individual portraits.
+            </p>
+            <p className="text-amber-800 font-medium text-xs">
+              Recommendation: For groups of 3+, we suggest our 60-Minute Signature or Deluxe sessions so everyone gets plenty of camera time without feeling rushed.
+            </p>
+          </div>
         </div>
 
       </div>
