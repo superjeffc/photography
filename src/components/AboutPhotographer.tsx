@@ -16,7 +16,7 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = () => {
             <div className="relative rounded-3xl overflow-hidden bg-slate-100 border border-slate-200/90 shadow-xl">
               <img
                 src="https://assets.superjeffc.com/apps/jeff.jpg"
-                alt="Jeff Chan - NYC Photographer"
+                alt="SuperJeffC - NYC Photographer"
                 loading="eager"
                 decoding="async"
                 className="w-full aspect-[3/2] object-cover object-center"
