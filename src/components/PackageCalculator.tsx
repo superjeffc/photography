@@ -113,7 +113,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
           <div className="space-y-1 text-xs sm:text-sm">
             <h4 className="font-bold text-slate-900 font-serif text-base">Planning a Family or Group Photoshoot?</h4>
             <p className="text-slate-600 leading-relaxed">
-              All packages include up to <strong>2 people</strong> (ideal for solo portraits, couples, or friends). For families and groups of 3 or more, additional guests are <strong>$35/person</strong> to accommodate group combinations and individual portraits.
+              All packages include up to <strong>2 people</strong> (ideal for solo portraits, couples, or friends). For families and groups of 3 or more, additional guests are <strong>$50/person</strong> to accommodate group combinations and individual portraits.
             </p>
             <p className="text-amber-800 font-medium text-xs">
               Recommendation: For groups of 3+, we suggest our 60-Minute Signature or Deluxe sessions so everyone gets plenty of camera time without feeling rushed.
