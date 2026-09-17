@@ -27,12 +27,6 @@ export interface PackageItem {
   popular?: boolean;
 }
 
-export interface AddOnItem {
-  id: string;
-  name: string;
-  price: number;
-  description: string;
-}
 
 export interface TestimonialItem {
   id: string;
@@ -142,12 +136,12 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     duration: '30 Minutes',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 15,
+    editedPhotos: 10,
     outfitChanges: 1,
     features: [
       'One Location (30 Mins Maximum)',
       'Up to 2 People Included',
-      '15 High-Resolution Edited Digital Photos',
+      '10 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
   },
@@ -160,13 +154,13 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     duration: '60 Minutes (1 Hr Max)',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 30,
+    editedPhotos: 15,
     outfitChanges: 1,
     popular: true,
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      '30 High-Resolution Edited Digital Photos',
+      '15 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
   },
@@ -174,46 +168,19 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     id: 'deluxe',
     name: 'Deluxe 1-Hour Session',
     tagline: 'More photos and extended coverage for a complete gallery of memories.',
-    price: 325,
-    originalPrice: 450,
+    price: 275,
+    originalPrice: 375,
     duration: '60 Minutes (1 Hr Max)',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 50,
+    editedPhotos: 30,
     outfitChanges: 1,
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      '50 High-Resolution Edited Digital Photos',
+      '30 High-Resolution Edited Digital Photos',
       '7 Day Standard Photo Delivery'
     ]
-  }
-];
-
-export const ADD_ONS: AddOnItem[] = [
-  {
-    id: 'extra-guest',
-    name: 'Additional Guest (Family / Group)',
-    price: 35,
-    description: 'Add an extra person beyond the 2 included guests (+$50/person for group and individual portraits).'
-  },
-  {
-    id: 'expedited-delivery',
-    name: '24-Hour Express Gallery Turnaround',
-    price: 65,
-    description: 'Get your full edited high-resolution digital photo gallery within 24 hours of your shoot.'
-  },
-  {
-    id: 'extra-edits',
-    name: '15 Extra Edited High-Res Photos',
-    price: 45,
-    description: 'Receive 15 additional hand-edited high-resolution digital photos in your final gallery.'
-  },
-  {
-    id: 'raw-files',
-    name: 'Complete Unedited RAW Image Archive',
-    price: 65,
-    description: 'Receive all full-resolution unedited RAW files from your session alongside your edited gallery.'
   }
 ];
 
