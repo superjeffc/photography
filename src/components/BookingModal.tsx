@@ -282,8 +282,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 >
                   <option value="1 Person (Solo)">1 Person (Solo Portrait / Headshot)</option>
                   <option value="2 People (Couples / Duo)">2 People (Couples / Duo — Base Package Included)</option>
-                  <option value="3 People (+$35)">3 People (+1 Additional Guest: +$35)</option>
-                  <option value="4 People (+$70)">4 People (+2 Additional Guests: +$70)</option>
+                  <option value="3 People (+$35)">3 People (+1 Additional Guest: +$50)</option>
+                  <option value="4 People (+$70)">4 People (+2 Additional Guests: +$100)</option>
                   <option value="5+ People (Family / Group)">5+ People (Family / Group)</option>
                 </select>
               </div>
