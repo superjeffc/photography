@@ -282,8 +282,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 >
                   <option value="1 Person (Solo)">1 Person (Solo Portrait / Headshot)</option>
                   <option value="2 People (Couples / Duo)">2 People (Couples / Duo — Base Package Included)</option>
-                  <option value="3 People (+$35)">3 People (+1 Additional Guest: +$50)</option>
-                  <option value="4 People (+$70)">4 People (+2 Additional Guests: +$100)</option>
+                  <option value="3 People (+$50)">3 People (+1 Additional Guest: +$50)</option>
+                  <option value="4 People (+$100)">4 People (+2 Additional Guests: +$100)</option>
                   <option value="5+ People (Family / Group)">5+ People (Family / Group)</option>
                 </select>
               </div>
@@ -314,10 +314,15 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 </button>
               </div>
 
-              <p className="text-[11px] text-slate-500 text-center flex items-center justify-center gap-1">
-                <Clock className="w-3.5 h-3.5 text-amber-600" />
-                Jeff guarantees a personal reply & route plan within 24 hours.
-              </p>
+              <div className="space-y-1 text-center">
+                <p className="text-[11px] text-slate-500 flex items-center justify-center gap-1">
+                  <Clock className="w-3.5 h-3.5 text-amber-600" />
+                  Jeff guarantees a personal reply & route plan within 24 hours.
+                </p>
+                <p className="text-[10.5px] text-slate-400">
+                  Confirmed bookings are non-refundable. Flexible rescheduling is available for rain or with 48 hours notice.
+                </p>
+              </div>
 
             </form>
           </div>
@@ -362,6 +367,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               <div className="flex justify-between border-b border-slate-200 pb-2">
                 <span className="text-slate-500">Requested Date:</span>
                 <span className="font-bold text-slate-900">{formData.date || 'Flexible / To Be Confirmed'}</span>
+              </div>
+              <div className="flex justify-between border-b border-slate-200 pb-2">
+                <span className="text-slate-500">Booking Policy:</span>
+                <span className="font-semibold text-amber-900">Non-refundable (flexible rescheduling)</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-slate-500">Response Guaranteed:</span>
