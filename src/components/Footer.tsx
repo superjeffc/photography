@@ -1,5 +1,5 @@
 import React from 'react';
-import { Camera, MapPin, Globe, ArrowUp } from 'lucide-react';
+import { Camera, MapPin, ArrowUp } from 'lucide-react';
 import { ProtectedEmail, ProtectedPhone } from './ProtectedContact';
 
 interface FooterProps {
@@ -26,23 +26,6 @@ export const Footer: React.FC<FooterProps> = () => {
                 Jeff Chan Photography
               </span>
             </div>
-
-            <p className="text-slate-600 text-xs sm:text-sm max-w-sm leading-relaxed">
-              Premier NYC client portrait and couple photography specializing in focused 1-hour sessions across iconic spots like Central Park, SoHo, and Brooklyn Bridge.
-            </p>
-
-            <div className="pt-2 flex items-center gap-4">
-              <a
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-                className="w-9 h-9 rounded-lg bg-white border border-slate-200 shadow-sm flex items-center justify-center text-amber-600 hover:bg-slate-50 hover:text-amber-700 transition-colors"
-                aria-label="Instagram"
-              >
-                <Globe className="w-4 h-4" />
-              </a>
-              <ProtectedEmail user="jeff" domain="superjeffc.com" showIcon={true} />
-            </div>
           </div>
 
           {/* Quick Links */}
@@ -58,7 +41,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
           {/* Contact Details */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">NYC Studio Contact</h4>
+            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Contact</h4>
             <div className="space-y-2 text-xs">
               <p className="flex items-start gap-2 text-slate-700">
                 <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />

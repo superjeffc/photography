@@ -134,7 +134,7 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
 export const SERVICE_PACKAGES: PackageItem[] = [
   {
     id: 'express',
-    name: 'The 30-Minute NYC Express',
+    name: 'Express 30-Minute Session',
     tagline: 'Ideal for quick solo portraits, simple headshots, or a fast couples shoot in 1 NYC spot.',
     price: 150,
     originalPrice: 225,
@@ -152,7 +152,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
   },
   {
     id: 'signature',
-    name: 'The Signature 1-Hour Session',
+    name: 'Signature 1-Hour Session',
     tagline: 'Our most popular session for couples and individual portrait shoots.',
     price: 225,
     originalPrice: 325,
@@ -172,7 +172,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
   },
   {
     id: 'deluxe',
-    name: 'The Deluxe 1-Hour Storybook',
+    name: 'Deluxe 1-Hour Session',
     tagline: 'More photos and extended coverage for a complete gallery of memories.',
     price: 325,
     originalPrice: 450,

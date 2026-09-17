@@ -15,16 +15,8 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/15 border border-amber-500/30 text-amber-800 text-xs font-bold uppercase tracking-wider shadow-sm">
             <Sparkles className="w-4 h-4 text-amber-600" />
-            <span>Special Introductory Rates • Limited Time Launch Offer</span>
+            <span>Discounted Packages • Limited Time Offer</span>
           </div>
-
-          <h2 className="text-3xl sm:text-5xl font-serif text-slate-900 tracking-tight">
-            Introductory Rates. <span className="text-gradient-amber italic font-normal">Unforgettable Memories.</span>
-          </h2>
-
-          <p className="text-slate-600 text-base sm:text-lg">
-            Special introductory launch pricing on NYC portrait and couples sessions. Transparent, all-inclusive pricing with no hidden fees.
-          </p>
         </div>
 
         {/* Standard Package Cards Grid */}
@@ -100,7 +92,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
                         : 'bg-slate-900 text-white hover:bg-amber-600 shadow-sm hover:shadow-md'
                     }`}
                   >
-                    <span>Book {pkg.name.split(' ')[1] || 'Session'}</span>
+                    <span>Book {pkg.name.split(' ')[0] || 'Session'}</span>
                     <ArrowRight className="w-4 h-4" />
                   </button>
                 </div>

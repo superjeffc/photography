@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart, Sun, Award, Sparkles } from 'lucide-react';
+import { Heart, Award } from 'lucide-react';
 
 interface AboutPhotographerProps {
-  onOpenBooking: () => void;
+  onOpenBooking?: () => void;
 }
 
-export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBooking }) => {
+export const AboutPhotographer: React.FC<AboutPhotographerProps> = () => {
   return (
     <section id="about" className="py-24 bg-white relative border-t border-slate-200/80">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -61,43 +61,6 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = ({ onOpenBook
             <p className="text-slate-600 text-sm leading-relaxed">
               Instead of stiff, awkward posing, I focus on gentle prompts, candid interactions, and natural movement. Whether we’re exploring vibrant NYC streets or tranquil park paths, I capture lively, expressive images filled with real smiles and genuine emotion.
             </p>
-
-            {/* Core Values / Philosophy */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1 shadow-sm">
-                <div className="flex items-center gap-2 text-amber-800 font-bold text-sm">
-                  <Sun className="w-4 h-4 text-amber-600" /> Golden Hour Expertise
-                </div>
-                <p className="text-xs text-slate-600">
-                  I track sunlight angles in NYC down to the minute for perfect glow and zero harsh shadows.
-                </p>
-              </div>
-
-              <div className="p-4 rounded-xl bg-slate-50 border border-slate-200/80 space-y-1 shadow-sm">
-                <div className="flex items-center gap-2 text-amber-800 font-bold text-sm">
-                  <Sparkles className="w-4 h-4 text-amber-600" /> Natural, Guided Posing
-                </div>
-                <p className="text-xs text-slate-600">
-                  Zero stiff or awkward posing. I guide you with easy, fun prompts so you look and feel completely natural.
-                </p>
-              </div>
-            </div>
-
-            {/* Location & Booking Availability */}
-            <div className="pt-4 border-t border-slate-200/80 flex flex-wrap items-center justify-between gap-4">
-              <div className="text-xs text-slate-600 flex items-center gap-2 font-medium">
-                <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                <span>NYC Local • Available Across Manhattan, Brooklyn & Queens</span>
-              </div>
-
-              <button
-                onClick={onOpenBooking}
-                className="px-6 py-3 rounded-xl bg-amber-500 hover:bg-amber-600 text-white font-bold text-xs uppercase tracking-wider gold-glow transition-all"
-              >
-                Let’s Create Together
-              </button>
-            </div>
-
           </div>
 
         </div>
