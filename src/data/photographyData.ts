@@ -143,11 +143,9 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     editedPhotos: 15,
     outfitChanges: 1,
     features: [
-      '1 Iconic NYC Location',
-      '15 High-Res Hand-Edited Digital Photos',
-      'Private Online Digital Gallery',
-      'Full Personal Digital Usage & Downloading Rights',
-      '5-7 Day Standard Photo Delivery'
+      'One Location (60 Mins Maximum)',
+      '15 High-Resolution Edited Digital Photos',
+      '7 Day Standard Photo Delivery'
     ]
   },
   {
@@ -162,12 +160,9 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     outfitChanges: 1,
     popular: true,
     features: [
-      '1 Iconic NYC Location (60 Mins Maximum)',
-      '30 High-Res Hand-Edited Digital Photos',
-      'Gentle Posing Guidance & Direction',
-      'Private Online Digital Gallery',
-      'Full Personal Digital Usage & Downloading Rights',
-      '5-7 Day Standard Photo Delivery'
+      'One Location (60 Mins Maximum)',
+      '30 High-Resolution Edited Digital Photos',
+      '7 Day Standard Photo Delivery'
     ]
   },
   {
@@ -181,12 +176,9 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     editedPhotos: 50,
     outfitChanges: 1,
     features: [
-      '1 Iconic NYC Location (60 Mins Maximum)',
-      '50+ High-Res Hand-Edited Digital Photos',
-      'Gentle Posing Guidance & Direction',
-      'Private Online Digital Gallery',
-      'Full Personal Digital Usage & Downloading Rights',
-      '5-7 Day Standard Photo Delivery'
+      'One Location (60 Mins Maximum)',
+      '50 High-Resolution Edited Digital Photos',
+      '7 Day Standard Photo Delivery'
     ]
   }
 ];

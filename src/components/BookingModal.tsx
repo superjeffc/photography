@@ -292,7 +292,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
 
               <p className="text-[11px] text-slate-500 text-center flex items-center justify-center gap-1">
                 <Clock className="w-3.5 h-3.5 text-amber-600" />
-                Jeff guarantees a personal reply & route plan within 2 business hours.
+                Jeff guarantees a personal reply & route plan within 24 hours.
               </p>
 
             </form>
