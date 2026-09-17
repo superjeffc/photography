@@ -33,15 +33,19 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between gap-4">
+        <div className="flex items-center justify-between gap-3 sm:gap-4">
           {/* Brand Logo */}
-          <a href="#" className="flex items-center gap-3 shrink-0 group">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-300 gold-glow shrink-0">
-              <Camera className="w-5 h-5 stroke-[2.5]" />
+          <a href="#" className="flex items-center gap-2.5 sm:gap-3 shrink min-w-0 group">
+            <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-300 gold-glow shrink-0">
+              <Camera className="w-4.5 h-4.5 sm:w-5 sm:h-5 stroke-[2.5]" />
             </div>
-            <div>
-              <span className="font-syne font-extrabold text-base sm:text-lg xl:text-xl tracking-wider text-slate-900 uppercase block leading-none group-hover:text-amber-600 transition-colors whitespace-nowrap">
-                Jeff Chan Photography
+            <div className="flex flex-col justify-center min-w-0">
+              <span className="font-syne font-extrabold text-sm sm:text-base md:text-lg xl:text-xl tracking-wider text-slate-900 uppercase block leading-none group-hover:text-amber-600 transition-colors whitespace-nowrap">
+                SuperJeffC
+                <span className="hidden sm:inline"> Photography</span>
+              </span>
+              <span className="sm:hidden text-[9px] font-bold tracking-widest text-amber-700/90 uppercase leading-none mt-1">
+                Photography
               </span>
             </div>
           </a>
@@ -72,7 +76,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors"
+            className="md:hidden p-2 rounded-lg text-slate-700 hover:text-slate-900 hover:bg-slate-100 transition-colors shrink-0"
             aria-label="Toggle menu"
           >
             {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}

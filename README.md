@@ -1,6 +1,6 @@
-# Jeff Chan Photography - Web Application & Booking Platform
+# SuperJeffC Photography - Web Application & Booking Platform
 
-A high-performance, modern web application designed and developed for Jeff Chan Photography, a New York City-based portrait and lifestyle photography practice. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, this application serves as both a client-facing portfolio showcase and an interactive session booking platform.
+A high-performance, modern web application designed and developed for SuperJeffC Photography, a New York City-based portrait and lifestyle photography practice. Built with React 19, TypeScript, Vite, and Tailwind CSS v4, this application serves as both a client-facing portfolio showcase and an interactive session booking platform.
 
 ## Overview & Portfolio Highlights
 
@@ -149,6 +149,6 @@ See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rule
 
 ## License & Rights Reserved
 
-Copyright (c) 2026 Jeff Chan Photography (Jeff Chan). All rights reserved.
+Copyright (c) 2026 SuperJeffC Photography (Jeff Chan). All rights reserved.
 
 All rights reserved. This repository, including all source code, design architecture, component implementations, documentation, and digital assets, is the sole property of Jeff Chan. No part of this repository or application may be copied, reproduced, redistributed, modified, or transmitted in any form or by any means without express prior written authorization from the copyright holder.

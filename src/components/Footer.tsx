@@ -23,7 +23,7 @@ export const Footer: React.FC<FooterProps> = () => {
                 <Camera className="w-5 h-5 stroke-[2.5]" />
               </div>
               <span className="font-syne font-extrabold text-xl tracking-wider text-slate-900 uppercase">
-                Jeff Chan Photography
+                SuperJeffC Photography
               </span>
             </div>
           </div>
@@ -60,7 +60,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
         {/* Bottom Bar */}
         <div className="pt-12 mt-12 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
-          <p>© {new Date().getFullYear()} Jeff Chan Photography NYC. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SuperJeffC Photography NYC. All rights reserved.</p>
           <div className="flex items-center gap-6">
             <button onClick={scrollToTop} className="flex items-center gap-1.5 text-amber-700 hover:text-amber-800 font-semibold">
               Back to Top <ArrowUp className="w-3.5 h-3.5" />

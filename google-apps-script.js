@@ -1,5 +1,5 @@
 /**
- * Google Apps Script for Jeff Chan Photography Inquiry Webhook
+ * Google Apps Script for SuperJeffC Photography Inquiry Webhook
  *
  * Instructions:
  * 1. Go to https://script.google.com while signed in as jeff@superjeffc.com
@@ -54,7 +54,7 @@ function doPost(e) {
           "<p style='margin: 4px 0 0 0; white-space: pre-wrap;'>" + message + "</p>" +
         "</div>" +
         "<br><hr style='border: none; border-top: 1px solid #e4e4e7;'>" +
-        "<p style='font-size: 11px; color: #71717a;'>Received automatically from Jeff Chan Photography Booking Form.</p>" +
+        "<p style='font-size: 11px; color: #71717a;'>Received automatically from SuperJeffC Photography Booking Form.</p>" +
       "</div>";
 
     // Send email using your Google Workspace Gmail account
