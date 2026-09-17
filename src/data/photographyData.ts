@@ -254,22 +254,27 @@ export const FAQS: FaqItem[] = [
   {
     category: 'weather',
     question: 'What happens if it rains on our scheduled shoot day?',
-    answer: 'If rain or inclement weather is forecasted on your scheduled shoot date, we will gladly reschedule your session to a clear backup date or time during your stay, or issue a full refund of your deposit. We do not shoot in the rain so you always get crisp, beautiful, dry photos!'
+    answer: 'If rain or inclement weather is forecasted on your scheduled shoot date, we will gladly reschedule your session to a clear backup date or time during your stay. All packages and retainer bookings are non-refundable.'
+  },
+  {
+    category: 'booking',
+    question: 'What is your cancellation and refund policy?',
+    answer: 'All session fees and deposits are non-refundable once booked, as that time slot is reserved exclusively for you. If your travel plans change or unexpected circumstances arise, we offer flexible rescheduling with at least 48 hours notice (or complimentary rescheduling in the event of inclement weather).'
   },
   {
     category: 'locations',
     question: 'Which NYC photoshoot locations do you recommend?',
-    answer: 'We recommend iconic NYC spots such as Central Park & Bow Bridge, SoHo Cast-Iron District, Brooklyn Bridge, and waterfront parks. Each location provides a distinct NYC backdrop, from classic architectural drama to serene natural paths.'
+    answer: 'We recommend iconic NYC spots such as Central Park, DUMBO, and waterfront parks. Each location provides a distinct NYC backdrop, from classic architectural drama to serene natural paths.'
   },
   {
     category: 'booking',
     question: 'How far in advance should I book my session?',
-    answer: 'For prime sunrise or golden hour slots in popular spots like Central Park, SoHo, or Brooklyn Bridge, we recommend booking 2 to 4 weeks in advance. However, we always keep a few flexible rush slots open for travelers visiting NYC on short notice!'
+    answer: 'We recommend booking 2 to 4 weeks in advance. However, we always keep a few flexible rush slots open for travelers visiting NYC on short notice!'
   },
   {
     category: 'delivery',
     question: 'How and when will I receive my edited high-resolution photos?',
-    answer: 'You will receive an invite to your private online high-resolution gallery within 5–7 business days. You can view and download high-resolution files directly to your phone or desktop. We also offer 24-hour express turnaround if you need them urgently!'
+    answer: 'You will receive an invite to your private online high-resolution gallery within 7 business days. You can view and download high-resolution files directly to your phone or desktop.'
   },
   {
     category: 'locations',
@@ -279,7 +284,7 @@ export const FAQS: FaqItem[] = [
   {
     category: 'booking',
     question: 'How many people can join the photoshoot?',
-    answer: 'All packages include up to 2 people, making them perfect for solo portraits, couples, or friends. If you are bringing a family or larger group (3+ people), additional guests can be added for $35 per person. For groups and families, we recommend our 60-Minute Signature or Deluxe sessions to ensure plenty of camera time for both group portraits and individual photos.'
+    answer: 'All packages include up to 2 people, making them perfect for solo portraits, couples, or friends. If you are bringing a family or larger group (3+ people), additional guests can be added for $50 per person. For groups and families, we recommend our 60-Minute Signature or Deluxe sessions to ensure plenty of camera time for both group portraits and individual photos.'
   }
 ];
 

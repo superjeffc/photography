@@ -1,5 +1,5 @@
 import React from 'react';
-import { Heart, Award } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 interface AboutPhotographerProps {
   onOpenBooking?: () => void;
@@ -21,25 +21,6 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = () => {
                 decoding="async"
                 className="w-full aspect-[3/2] object-cover object-center"
               />
-
-              {/* Top Left Floating Pill Badges (matches Gallery style) */}
-              <div className="absolute top-4 left-4 flex items-center gap-2 z-10">
-                <span className="px-3.5 py-1.5 rounded-full bg-white/95 text-slate-800 border border-slate-200/80 text-xs font-semibold shadow-md">
-                  Jeff Chan
-                </span>
-                <span className="px-3 py-1.5 rounded-full bg-white/95 text-amber-700 border border-slate-200/80 text-xs font-medium shadow-md">
-                  NYC Photographer
-                </span>
-              </div>
-            </div>
-
-            {/* Experience Floating Badge */}
-            <div className="absolute -bottom-4 right-4 bg-amber-500 text-white px-4 py-2.5 rounded-2xl shadow-xl font-serif font-bold border-2 border-white hidden sm:flex items-center gap-2.5 gold-glow">
-              <Award className="w-6 h-6 shrink-0" />
-              <div>
-                <p className="text-base font-extrabold leading-none">Relaxed & Candid</p>
-                <p className="text-[10px] font-sans font-semibold text-amber-100 uppercase mt-0.5">Natural NYC Sessions</p>
-              </div>
             </div>
           </div>
 
