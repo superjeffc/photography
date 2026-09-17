@@ -169,7 +169,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     name: 'Deluxe 1-Hour Session',
     tagline: 'More photos and extended coverage for a complete gallery of memories.',
     price: 275,
-    originalPrice: 375,
+    originalPrice: 400,
     duration: '60 Minutes (1 Hr Max)',
     partySize: 'Up to 2 People',
     locationsCount: 1,
