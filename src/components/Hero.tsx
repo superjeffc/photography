@@ -6,7 +6,7 @@ interface HeroProps {
 }
 
 export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
-  const heroImageUrl = 'https://assets.superjeffc.com/apps/dumbo1.jpg';
+  const heroImageUrl = 'https://assets.superjeffc.com/apps/dumbo1.webp';
 
   return (
     <section className="relative min-h-[90vh] flex items-center justify-center pt-28 pb-20 overflow-hidden bg-[#faf8f5]">

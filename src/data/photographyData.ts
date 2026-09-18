@@ -7,6 +7,7 @@ export interface PortfolioItem {
   category: 'couples' | 'portraits';
   categoryLabel: string;
   image: string;
+  fullResImage?: string;
   gear: string;
   settings: string;
   story: string;
@@ -54,7 +55,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'DUMBO',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
+    image: 'https://assets.superjeffc.com/apps/dumbo1.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/dumbo1.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1000s @ f/2.8, ISO 100',
     story: 'Framed between historic red-brick warehouse facades on Washington Street with the Manhattan Bridge tower centered behind.'
@@ -67,7 +69,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Little Island',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/little-island.jpg',
+    image: 'https://assets.superjeffc.com/apps/little-island.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/little-island.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/800s @ f/2.8, ISO 100',
     story: 'Captured on a crisp November evening. The golden hour sun peeked right through the Manhattan Bridge superstructure, creating a warm magical glow.'
@@ -80,7 +83,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Gantry Plaza State Park',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
+    image: 'https://assets.superjeffc.com/apps/gantry-state-park1.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1250s @ f/2.8, ISO 100',
     story: 'Sleek session with the iconic Pepsi-Cola sign and Empire State building glowing in sunset tones.'
@@ -93,7 +97,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Chinatown',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: 'https://assets.superjeffc.com/apps/chinatown1.jpg',
+    image: 'https://assets.superjeffc.com/apps/chinatown1.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/chinatown1.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/2000s @ f/2.8, ISO 100',
     story: 'Sunset light reflecting off the East River piers at Gantry Plaza State Park with clear views of the Midtown Manhattan skyline.'
@@ -106,7 +111,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Poconos Mountains',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/hiking.jpg',
+    image: 'https://assets.superjeffc.com/apps/hiking.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/hiking.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/640s @ f/2.8, ISO 200',
     story: 'A serene outdoor adventure session captured along lush forest trails in the Poconos — available as part of custom Tri-State day trip packages.'
@@ -119,7 +125,8 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
     locationName: 'Chinatown',
     category: 'couples',
     categoryLabel: 'Couples',
-    image: 'https://assets.superjeffc.com/apps/chinatown2.jpg',
+    image: 'https://assets.superjeffc.com/apps/chinatown2.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/chinatown2.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
     settings: '1/1000s @ f/2.8, ISO 100',
     story: 'A serene twilight session along the restored industrial gantries and East River wooden promenade at Gantry Plaza State Park.'

@@ -48,7 +48,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = () => {
 
             {/* Top Right Full-Res Link */}
             <a
-              href={currentItem.image}
+              href={currentItem.fullResImage || currentItem.image}
               target="_blank"
               rel="noopener noreferrer"
               className="absolute top-4 right-4 sm:top-6 sm:right-6 z-20 px-3 py-1.5 rounded-full bg-white/95 hover:bg-slate-50 text-slate-700 hover:text-slate-900 border border-slate-200/80 text-xs font-mono transition-colors shadow-md"
