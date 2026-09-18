@@ -77,17 +77,17 @@ export const PORTFOLIO_GALLERY: PortfolioItem[] = [
   },
   {
     id: 'p2',
-    title: 'Midtown Skyline Sunset Magic',
+    title: 'Pier 57',
     client: 'Elena Vance',
-    locationId: 'gantry-park',
-    locationName: 'Gantry Plaza State Park',
+    locationId: 'pier-57',
+    locationName: 'Pier 57',
     category: 'portraits',
     categoryLabel: 'Solo Portraits',
-    image: '/images/gantry-state-park1.webp',
-    fullResImage: 'https://assets.superjeffc.com/apps/gantry-state-park1.jpg',
+    image: '/images/pier-57.webp',
+    fullResImage: 'https://assets.superjeffc.com/apps/little-island2.jpg',
     gear: 'Sony A7C II + FE 24-50mm f/2.8 G',
-    settings: '1/1250s @ f/2.8, ISO 100',
-    story: 'Sleek session with the iconic Pepsi-Cola sign and Empire State building glowing in sunset tones.'
+    settings: '1/250s @ f/7.1, ISO 125',
+    story: 'Vibrant rooftop portrait overlooking Little Island and the Lower Manhattan skyline from Pier 57 on a clear summer afternoon.'
   },
   {
     id: 'p3',
