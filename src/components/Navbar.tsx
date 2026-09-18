@@ -40,12 +40,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenBooking }) => {
               <Camera className="w-4.5 h-4.5 sm:w-5 sm:h-5 stroke-[2.5]" />
             </div>
             <div className="flex flex-col justify-center min-w-0">
-              <span className="font-syne font-extrabold text-sm sm:text-base md:text-lg xl:text-xl tracking-wider text-slate-900 uppercase block leading-none group-hover:text-amber-600 transition-colors whitespace-nowrap">
-                SuperJeffC
-                <span className="hidden sm:inline"> Photography</span>
-              </span>
-              <span className="sm:hidden text-[9px] font-bold tracking-widest text-amber-700/90 uppercase leading-none mt-1">
-                Photography
+              <span className="font-sans font-extrabold text-base sm:text-lg xl:text-xl tracking-tight text-slate-900 group-hover:text-amber-600 transition-colors whitespace-nowrap">
+                SuperJeffC <span className="font-semibold text-slate-700 group-hover:text-amber-600/90 transition-colors">Photography</span>
               </span>
             </div>
           </a>
