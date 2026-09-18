@@ -22,8 +22,8 @@ export const Footer: React.FC<FooterProps> = () => {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 to-amber-400 flex items-center justify-center text-white font-bold gold-glow">
                 <Camera className="w-5 h-5 stroke-[2.5]" />
               </div>
-              <span className="font-syne font-extrabold text-xl tracking-wider text-slate-900 uppercase">
-                SuperJeffC Photography
+              <span className="font-sans font-extrabold text-xl tracking-tight text-slate-900">
+                SuperJeffC <span className="font-semibold text-slate-700">Photography</span>
               </span>
             </div>
           </div>
