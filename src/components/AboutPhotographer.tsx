@@ -38,10 +38,6 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = () => {
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
               My goal as a photographer is simple: to help you feel completely relaxed, comfortable, and at ease from the second we start walking. Photography should never feel like a chore or a series of forced poses — it should be a fun, memorable experience where your true personality shines through.
             </p>
-
-            <p className="text-slate-600 text-sm leading-relaxed">
-              Instead of stiff, awkward posing, I focus on gentle prompts, candid interactions, and natural movement. Whether we’re exploring vibrant NYC streets or tranquil park paths, I capture lively, expressive images filled with real smiles and genuine emotion.
-            </p>
           </div>
 
         </div>
