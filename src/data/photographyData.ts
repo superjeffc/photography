@@ -150,7 +150,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'Up to 2 People Included',
       'All Original Photos Included (~75–125)',
       '33 MP Ultra-High Resolution (Print-Ready)',
-      '5 Client-Requested Touch-Up Edits',
+      '5 Touch-Up Edits',
       'Same-Day Photo Delivery'
     ]
   },
@@ -171,7 +171,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'Up to 2 People Included',
       'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
-      '10 Client-Requested Touch-Up Edits',
+      '10 Touch-Up Edits',
       'Same-Day Photo Delivery'
     ]
   },
@@ -191,7 +191,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'Up to 2 People Included',
       'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
-      '20 Client-Requested Touch-Up Edits',
+      '20 Touch-Up Edits',
       'Same-Day Photo Delivery'
     ]
   }
