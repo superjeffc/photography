@@ -151,7 +151,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'All Original Photos Included (~75–125)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '5 Touch-Up Edits',
-      'Same-Day Photo Delivery'
+      'Same-Day Original Photo Delivery'
     ]
   },
   {
@@ -172,7 +172,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '10 Touch-Up Edits',
-      'Same-Day Photo Delivery'
+      'Same-Day Original Photo Delivery'
     ]
   },
   {
@@ -192,7 +192,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
       'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '20 Touch-Up Edits',
-      'Same-Day Photo Delivery'
+      'Same-Day Original Photo Delivery'
     ]
   }
 ];
