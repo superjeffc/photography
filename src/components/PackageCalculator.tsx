@@ -17,6 +17,12 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
             <Sparkles className="w-4 h-4 text-amber-600" />
             <span>Discounted Packages • Limited Time Offer</span>
           </div>
+          <h2 className="text-3xl sm:text-5xl font-serif text-slate-900 tracking-tight">
+            Transparent, All-Inclusive <span className="text-gradient-amber italic font-normal">Pricing</span>
+          </h2>
+          <p className="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto">
+            <strong>Every photo taken during your session is yours.</strong> You will receive all high-resolution original photos delivered <strong>same-day</strong>. Then, simply choose your favorites from the gallery for personalized touch-up edits!
+          </p>
         </div>
 
         {/* Standard Package Cards Grid */}
@@ -72,7 +78,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
                     </div>
                     <div className="p-2 rounded-lg bg-slate-50 border border-slate-200 text-slate-700 flex items-center justify-center gap-1.5 text-center">
                       <Layers className="w-3.5 h-3.5 text-amber-600 shrink-0" />
-                      <span className="truncate">{pkg.editedPhotos} Edits</span>
+                      <span className="truncate">{pkg.editedPhotos} Touch-Ups</span>
                     </div>
                   </div>
 
@@ -106,7 +112,20 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
         </div>
 
         {/* Policies Callout */}
-        <div className="mt-12 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="mt-12 max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+          {/* All Photos & Fast Delivery Policy Callout */}
+          <div className="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80 shadow-sm flex items-start gap-4 text-left">
+            <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 shrink-0 mt-0.5">
+              <Clock className="w-5 h-5" />
+            </div>
+            <div className="space-y-1 text-xs sm:text-sm">
+              <h4 className="font-bold text-slate-900 font-serif text-sm">All Originals + Same-Day Delivery</h4>
+              <p className="text-slate-600 leading-relaxed text-xs">
+                Receive <strong>all original high-resolution photos</strong> taken during your shoot <strong>the very same day</strong>. Then select your favorites for personalized touch-ups!
+              </p>
+            </div>
+          </div>
+
           {/* Family & Group Policy Callout */}
           <div className="p-6 rounded-2xl bg-amber-50/60 border border-amber-200/80 shadow-sm flex items-start gap-4 text-left">
             <div className="w-10 h-10 rounded-xl bg-amber-500/15 border border-amber-500/30 flex items-center justify-center text-amber-700 shrink-0 mt-0.5">
@@ -126,7 +145,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div className="space-y-1 text-xs sm:text-sm">
-              <h4 className="font-bold text-slate-900 font-serif text-sm">Non-Refundable & Flexible Rescheduling</h4>
+              <h4 className="font-bold text-slate-900 font-serif text-sm">Flexible Rescheduling</h4>
               <p className="text-slate-600 leading-relaxed text-xs">
                 All bookings and session deposits are <strong>non-refundable</strong> once confirmed. We offer <strong>flexible rescheduling</strong> in the event of inclement weather or with 48 hours notice.
               </p>
