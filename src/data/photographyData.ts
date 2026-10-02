@@ -148,7 +148,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     features: [
       'One Location (30 Mins Maximum)',
       'Up to 2 People Included',
-      'All Original High Resolution Photos Included (~75–125)',
+      'All Original Photos Included (~75–125)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '5 Client-Requested Touch-Up Edits',
       'Same-Day Photo Delivery'
@@ -169,7 +169,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      'All Original High Resolution Photos Included (~150–250)',
+      'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '10 Client-Requested Touch-Up Edits',
       'Same-Day Photo Delivery'
@@ -178,7 +178,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
   {
     id: 'deluxe',
     name: 'Deluxe 1-Hour Session',
-    tagline: 'More photos and extended coverage for a complete gallery of memories.',
+    tagline: 'Full session with more edits for a complete gallery of memories.',
     price: 275,
     originalPrice: 400,
     duration: '60 Minutes (1 Hr Max)',
@@ -189,7 +189,7 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      'All Original High Resolution Photos Included (~150–250)',
+      'All Original Photos Included (~150–250)',
       '33 MP Ultra-High Resolution (Print-Ready)',
       '20 Client-Requested Touch-Up Edits',
       'Same-Day Photo Delivery'
