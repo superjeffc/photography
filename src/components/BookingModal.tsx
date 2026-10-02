@@ -241,12 +241,12 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     onChange={(e) => setFormData({ ...formData, location: e.target.value })}
                     className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-300 text-slate-900 text-sm focus:outline-none focus:border-amber-500 focus:ring-2 focus:ring-amber-500/20 focus:bg-white transition-colors"
                   >
-                    <option value="Central Park & Bow Bridge">Central Park & Bow Bridge</option>
-                    <option value="SoHo Cast-Iron District">SoHo Cast-Iron District (Manhattan)</option>
-                    <option value="Brooklyn Bridge Walkway">Brooklyn Bridge Walkway (Sunrise)</option>
-                    <option value="DUMBO & Washington St">DUMBO & Washington St (Brooklyn)</option>
-                    <option value="Gantry Plaza State Park">Gantry Plaza State Park (Queens Waterfront)</option>
-                    <option value="Times Square Plaza (Daylight)">Times Square Plaza (Daylight)</option>
+                    <option value="Central Park">Central Park</option>
+                    <option value="SoHo">SoHo</option>
+                    <option value="Brooklyn Bridge">Brooklyn Bridge</option>
+                    <option value="DUMBO">DUMBO</option>
+                    <option value="Gantry Plaza State Park">Gantry Plaza State Park</option>
+                    <option value="Times Square">Times Square</option>
                     <option value="Custom NYC Location">Custom NYC Location / Studio</option>
                   </select>
                 </div>
