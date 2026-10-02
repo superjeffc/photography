@@ -38,10 +38,6 @@ export const AboutPhotographer: React.FC<AboutPhotographerProps> = () => {
             <p className="text-slate-700 text-base sm:text-lg leading-relaxed">
               My goal as a photographer is simple: to help you feel completely relaxed, comfortable, and at ease from the second we start walking. Photography should never feel like a chore or a series of forced poses — it should be a fun, memorable experience where your true personality shines through.
             </p>
-
-            <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-              Every session is shot on a high-end <strong>33-megapixel full-frame Sony mirrorless system</strong>, ensuring ultra-fine detail, gorgeous natural colors, and true print-ready clarity whether you're sharing to Instagram or printing large fine-art wall canvases.
-            </p>
           </div>
 
         </div>
