@@ -143,13 +143,15 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     duration: '30 Minutes',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 10,
+    editedPhotos: 5,
     outfitChanges: 1,
     features: [
       'One Location (30 Mins Maximum)',
       'Up to 2 People Included',
-      '10 High-Resolution Edited Digital Photos',
-      '7 Day Standard Photo Delivery'
+      'All Original High Resolution Photos Included (~75–125)',
+      '33 MP Ultra-High Resolution (Print-Ready)',
+      '5 Client-Requested Touch-Up Edits',
+      'Same-Day Photo Delivery'
     ]
   },
   {
@@ -161,14 +163,16 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     duration: '60 Minutes (1 Hr Max)',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 15,
+    editedPhotos: 10,
     outfitChanges: 1,
     popular: true,
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      '15 High-Resolution Edited Digital Photos',
-      '7 Day Standard Photo Delivery'
+      'All Original High Resolution Photos Included (~150–250)',
+      '33 MP Ultra-High Resolution (Print-Ready)',
+      '10 Client-Requested Touch-Up Edits',
+      'Same-Day Photo Delivery'
     ]
   },
   {
@@ -180,13 +184,15 @@ export const SERVICE_PACKAGES: PackageItem[] = [
     duration: '60 Minutes (1 Hr Max)',
     partySize: 'Up to 2 People',
     locationsCount: 1,
-    editedPhotos: 30,
+    editedPhotos: 20,
     outfitChanges: 1,
     features: [
       'One Location (60 Mins Maximum)',
       'Up to 2 People Included',
-      '30 High-Resolution Edited Digital Photos',
-      '7 Day Standard Photo Delivery'
+      'All Original High Resolution Photos Included (~150–250)',
+      '33 MP Ultra-High Resolution (Print-Ready)',
+      '20 Client-Requested Touch-Up Edits',
+      'Same-Day Photo Delivery'
     ]
   }
 ];
@@ -247,8 +253,8 @@ export const FAQS: FaqItem[] = [
   },
   {
     category: 'delivery',
-    question: 'How and when will I receive my edited high-resolution photos?',
-    answer: 'You will receive an invite to your private online high-resolution gallery within 7 business days. You can view and download high-resolution files directly to your phone or desktop.'
+    question: 'How and when will I receive my photos?',
+    answer: 'Because we shoot dual RAW + JPG on a 33-megapixel full-frame Sony camera, you will receive full access to your private online gallery containing ALL original, full-resolution photos the very same day! Each photo is captured in ultra-crisp 33 MP detail (perfect for large wall prints and canvases). You can download all your shots immediately and select your favorites for custom touch-up editing.'
   },
   {
     category: 'locations',
