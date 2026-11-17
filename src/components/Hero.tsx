@@ -14,7 +14,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
       <div className="absolute inset-0 z-0">
         <img
           src={heroImageUrl}
-          alt="NYC Client Photography Session"
+          alt="Candid NYC portrait and couple photography session at Empire Stores in DUMBO, Brooklyn by Jeff Chan"
           className="w-full h-full object-cover object-center transform scale-105 opacity-40 transition-all duration-1000"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#faf8f5] via-[#faf8f5]/70 to-white/60" />

@@ -124,6 +124,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         {/* Close Button */}
         <button
           onClick={resetForm}
+          aria-label="Close booking modal"
           className="absolute top-5 right-5 w-10 h-10 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 border border-slate-200 flex items-center justify-center transition-colors"
         >
           <X className="w-5 h-5" />

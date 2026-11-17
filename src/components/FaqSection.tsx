@@ -77,6 +77,7 @@ export const FaqSection: React.FC<FaqSectionProps> = ({ onOpenBooking }) => {
               >
                 <button
                   onClick={() => toggleFaq(idx)}
+                  aria-expanded={isOpen}
                   className="w-full p-6 text-left flex items-center justify-between gap-4 focus:outline-none"
                 >
                   <span className="text-base sm:text-lg font-bold text-slate-900 font-serif">{faq.question}</span>

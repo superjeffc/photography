@@ -30,7 +30,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
           {/* Quick Links */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Navigation</h4>
+            <h2 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Navigation</h2>
             <ul className="space-y-2 text-xs">
               <li><a href="#gallery" className="hover:text-amber-600 transition-colors">Client Portfolio</a></li>
               <li><a href="#packages" className="hover:text-amber-600 transition-colors">Pricing Packages</a></li>
@@ -41,7 +41,7 @@ export const Footer: React.FC<FooterProps> = () => {
 
           {/* Contact Details */}
           <div className="space-y-3">
-            <h4 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Contact</h4>
+            <h2 className="text-xs font-bold text-slate-900 uppercase tracking-wider font-mono">Contact</h2>
             <div className="space-y-2 text-xs">
               <p className="flex items-start gap-2 text-slate-700">
                 <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />

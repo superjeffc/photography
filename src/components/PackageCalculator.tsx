@@ -119,7 +119,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
               <Clock className="w-5 h-5" />
             </div>
             <div className="space-y-1 text-xs sm:text-sm">
-              <h4 className="font-bold text-slate-900 font-serif text-sm">All Originals + Same-Day Delivery</h4>
+              <h3 className="font-bold text-slate-900 font-serif text-sm">All Originals + Same-Day Delivery</h3>
               <p className="text-slate-600 leading-relaxed text-xs">
                 Receive <strong>all original high-resolution photos</strong> taken during your shoot <strong>the very same day</strong>. Then select your favorites for personalized touch-ups!
               </p>
@@ -132,7 +132,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
               <Users className="w-5 h-5" />
             </div>
             <div className="space-y-1 text-xs sm:text-sm">
-              <h4 className="font-bold text-slate-900 font-serif text-sm">Family & Group Sessions</h4>
+              <h3 className="font-bold text-slate-900 font-serif text-sm">Family & Group Sessions</h3>
               <p className="text-slate-600 leading-relaxed text-xs">
                 All packages include up to <strong>2 people</strong>. For families and groups of 3+, additional guests are <strong>$50/person</strong>. For groups, we suggest our 60-Minute Signature or Deluxe sessions.
               </p>
@@ -145,7 +145,7 @@ export const PackageCalculator: React.FC<PackageCalculatorProps> = ({ onOpenBook
               <ShieldCheck className="w-5 h-5" />
             </div>
             <div className="space-y-1 text-xs sm:text-sm">
-              <h4 className="font-bold text-slate-900 font-serif text-sm">Flexible Rescheduling</h4>
+              <h3 className="font-bold text-slate-900 font-serif text-sm">Flexible Rescheduling</h3>
               <p className="text-slate-600 leading-relaxed text-xs">
                 All bookings and session deposits are <strong>non-refundable</strong> once confirmed. We offer <strong>flexible rescheduling</strong> in the event of inclement weather or with 48 hours notice.
               </p>

@@ -1,13 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-<url>
-  <loc>https://photography.superjeffc.com/</loc>
-  <lastmod>2026-09-16T21:30:00+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://photography.superjeffc.com/</loc>
+    <lastmod>2026-11-17</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/og-image.jpg</image:loc>
+      <image:title>NYC Portrait Photography at Pier 57 Overlooking Little Island and Lower Manhattan</image:title>
+      <image:caption>Outdoor NYC portrait session at Pier 57 with Little Island and One World Trade Center in the background by Jeff Chan Photography.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/images/dumbo1.webp</image:loc>
+      <image:title>DUMBO Brooklyn Portrait &amp; Couple Photography</image:title>
+      <image:caption>Candid NYC photography session framed under historic brick arches in DUMBO, Brooklyn.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/images/little-island.webp</image:loc>
+      <image:title>Little Island NYC Portrait &amp; Couple Photography</image:title>
+      <image:caption>Natural-light portrait session beneath the architectural tulip piers at Little Island in Manhattan, NYC.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/images/pier-57.webp</image:loc>
+      <image:title>Pier 57 Rooftop Portrait Session in New York City</image:title>
+      <image:caption>Vibrant rooftop portrait overlooking Little Island and the Lower Manhattan skyline from Pier 57.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/images/chinatown1.webp</image:loc>
+      <image:title>Chinatown NYC Solo Portrait Session</image:title>
+      <image:caption>Colorful outdoor portrait session in Chinatown, Manhattan by Jeff Chan Photography.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://photography.superjeffc.com/images/chinatown2.webp</image:loc>
+      <image:title>Historic Doyers Street Chinatown NYC Photography</image:title>
+      <image:caption>Environmental portrait captured in historic Chinatown, New York City.</image:caption>
+    </image:image>
+  </url>
 </urlset>

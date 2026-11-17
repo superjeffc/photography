@@ -18,8 +18,14 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = () => {
     setCurrentIndex((prev) => (prev === PORTFOLIO_GALLERY.length - 1 ? 0 : prev + 1));
   };
 
+  const mainAlt =
+    currentItem.title === currentItem.locationName
+      ? `${currentItem.categoryLabel} photography at ${currentItem.locationName}, NYC by Jeff Chan`
+      : `${currentItem.title} — ${currentItem.categoryLabel} photography in ${currentItem.locationName} by Jeff Chan`;
+
   return (
     <section id="gallery" className="pt-24 sm:pt-28 pb-20 bg-white relative">
+      <h1 className="sr-only">Jeff Chan Photography — NYC Portrait, Couple &amp; Proposal Photographer</h1>
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Single Image Large Showcase Frame */}
@@ -30,7 +36,7 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = () => {
             <img
               key={currentItem.id}
               src={currentItem.image}
-              alt={currentItem.title}
+              alt={mainAlt}
               loading="eager"
               decoding="async"
               className="max-w-full max-h-[70vh] w-auto h-auto object-contain rounded-xl shadow-2xl transition-opacity duration-300"
@@ -81,13 +87,21 @@ export const PortfolioGallery: React.FC<PortfolioGalleryProps> = () => {
               <button
                 key={item.id}
                 onClick={() => setCurrentIndex(idx)}
+                aria-label={`View photo ${idx + 1} of ${PORTFOLIO_GALLERY.length}: ${item.title} (${item.locationName})`}
+                aria-current={currentIndex === idx ? 'true' : undefined}
                 className={`relative w-16 h-12 rounded-lg overflow-hidden border-2 transition-all shrink-0 ${
                   currentIndex === idx
                     ? 'border-amber-500 scale-105 shadow-md gold-glow'
                     : 'border-slate-200 opacity-60 hover:opacity-100'
                 }`}
               >
-                <img src={item.image} alt={item.locationName} className="w-full h-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={`${item.title} — ${item.locationName} thumbnail`}
+                  loading="lazy"
+                  decoding="async"
+                  className="w-full h-full object-cover"
+                />
               </button>
             ))}
           </div>
